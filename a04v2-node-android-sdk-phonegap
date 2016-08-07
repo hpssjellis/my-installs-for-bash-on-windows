@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#assumes both these commands have been done
+#sudo su
+#apt-get update
+
+sudo apt-get -y install nodejs
+sudo apt-get -y install npm
+
+
+npm install -g phonegap@latest
+sudo apt-get install -y ant
+sudo apt-get install -y lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
+
+mkdir /home/android
+
+#note use this url to get the android sdk https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
+
+wget https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -0 /home/android/android-sdk_r24.4.1-linux.tgz
+
+sudo tar -zxvf /home/android/android-sdk_r24.0.2-linux.tgz -C /home/android/
+
+export PATH=$PATH:/home/android/android-sdk-linux/
+export PATH=$PATH:/home/android/android-sdk-linux/tools
+export PATH=$PATH:/home/android/android-sdk-linux/platform-tools
+export PATH=$PATH:/home/android/android-sdk-linux/build-tools
+
+echo "Check versions"
+git -version
+android -h
+phonegap -v
+
+phonegap create testapp
