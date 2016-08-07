@@ -15,10 +15,11 @@ tar -zxf jdk-8u5-linux-x64.tar.gz -C /opt/jdk
 
 ls /opt/jdk
 
-
+#exports so that this bash instance runs well
 export JAVA_HOME=/opt/jdk/jdk1.8.0_05
 export PATH=$PATH:$JAVA_HOME/bin
 
+#printf so that a new instance (window) using bash will still run.
 printf "\n\nexport JAVA_HOME=/opt/jdk/jdk1.8.0_05\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
 
 
