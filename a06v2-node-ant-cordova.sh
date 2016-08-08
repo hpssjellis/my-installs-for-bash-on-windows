@@ -41,10 +41,14 @@ ant -V
 node -v
 npm -v
 
+whereis node
+which node
 
-mkdir /home/phonegap
+echo "Now lets test phonegap cordova"
 
-cd /home/phonegap
+mkdir /home/cordova
+
+cd /home/cordova
 
 #get out of sudo
 exit
