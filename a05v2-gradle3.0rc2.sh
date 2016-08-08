@@ -17,7 +17,7 @@ sudo wget -N http://downloads.gradle.org/distributions/gradle-${gradle_version}-
 sudo unzip -oq ./gradle-${gradle_version}-all.zip -d /home/gradle
 sudo ln -sfnv gradle-${gradle_version} /home/gradle/gradle-${gradle_version}
 
-echo "exporting the Path to my .profile file so other terminals have the path"
+echo "exporting the Path to my .bashrc file so other terminals have the path"
 
 printf "\nexport GRADLE_USER_HOME=/home/gradle/gradle-$gradle_version\nexport PATH=\$PATH:\$GRADLE_USER_HOME/bin"  >> ~/.bashrc
 
