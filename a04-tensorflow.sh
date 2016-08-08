@@ -41,7 +41,7 @@ echo "Now intall tensorFlow into the enviroment"
 #sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.7.1-cp27-none-linux_x86_64.whl
 
 # Aug, 2016 Version 10 tensorflow
-#sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.10.0rc0-cp27-none-linux_x86_64.whl
+pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.10.0rc0-cp27-none-linux_x86_64.whl
 
 
 
@@ -57,10 +57,16 @@ cd /home/tensorflow-from-repo
 
 git clone --recurse-submodules https://github.com/tensorflow/tensorflow
 
+ln -s /home/tensorflow-from-repo/tensorflow/tensorflow/examples /home/$USER/b01-link-to-tf-examples
+
+
 echo "Try making a link to the installed tensorflow not just the repo cloned but we need to find it"
-whereis tensorflow
-which tensorflow
-#ln -s /home/ubuntu//virtual-tf/lib/python2.7/site-packages/tensorflow /home/ubuntu/workspace/pip-tensorflow-link
+echo "bash-on-windows may have trouble with double quotes inside symlinks"
+ln -s /home/ubuntu//virtual-tf/lib/python2.7/site-packages/tensorflow /home/$USER/b02-link-to-pip-tensorflow
+
+#whereis tensorflow
+#which tensorflow
+
 
 echo "------------------------Tensorflow installed--------------------------------------"
 echo "--------------------------------------------------------------"
