@@ -8,6 +8,7 @@
 gradle_version=3.0-rc-2
 
 mkdir /home/gradle
+cd home/gradle
 
 
 wget -N http://downloads.gradle.org/distributions/gradle-${gradle_version}-all.zip
