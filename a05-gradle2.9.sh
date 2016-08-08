@@ -10,6 +10,8 @@
 gradle_version=2.9
 
 sudo mkdir /home/gradle
+cd /home/gradle
+
 sudo wget -N http://downloads.gradle.org/distributions/gradle-${gradle_version}-all.zip
 sudo unzip -oq ./gradle-${gradle_version}-all.zip -d /home/gradle
 sudo ln -sfnv gradle-${gradle_version} /home/gradle/gradle-${gradle_version}
