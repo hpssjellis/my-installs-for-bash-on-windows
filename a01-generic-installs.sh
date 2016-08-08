@@ -14,7 +14,15 @@ sudo apt-get -y install git pkg-config g++ zlib1g-dev unzip zip python-pip pytho
 
 #install java 1.7 for android sdk 
 sudo apt-get install -y lib32z1  openjdk-7-jdk
+export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
 
+#printf "\n\nexport JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
+
+
+java -version
+
+echo "Note java 7 paths not entered into .bashrc so that java 8 can be installed"
 
 
 echo "Utilities installed"
