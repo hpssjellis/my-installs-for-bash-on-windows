@@ -1,0 +1,100 @@
+bash
+
+#I have heard it works better from the power shell?
+
+username root
+password
+
+
+#do some checks
+git --version
+nano --version
+python --version
+#ctrl-D to quit
+#short form works for node
+
+sudo su
+
+
+
+
+ls
+pwd
+
+cd ~/
+ls
+cd /
+ls
+ls -la
+
+cd /home
+mkdir tom
+cd tom
+
+
+nano myhello.sh
+#!/bin/bash
+echo "hello Ubuntu on Windows"
+ctrl-x to quit
+
+
+ls
+
+#tab to autofil
+bash myhello.sh
+sudo chmod +x myhello.sh
+
+
+lsb_release -a
+
+sudo apt-get update
+
+sudo apt-get git
+
+
+
+git clone https://github.com/hpssjellis/my-installs-for-bash-on-windows.git
+
+
+cd go-tab
+bash setup.sh
+
+
+
+find files with
+
+find -name '*myfile*'
+
+which myfile.txt follows your path to get the first occurance
+
+whereis myfile.txt   show binaries and man pages
+
+
+
+
+mkdir go
+touch me.txt
+rm me.txt
+rmdir go
+
+# -f is giving no warnings dangerous -r recursive -v verbose
+rm -rv go
+
+
+
+#get a better ubuntu
+
+sudo apt-get upgrade
+
+lsb_release -a
+
+
+#if you screw up bash, type into a windows command shell.
+#This will delete all your changes to bash and windows ubuntu 
+
+
+
+lxrun /uninstall /full 
+
+#only delete your installation not your home
+lxrun /uninstall 
