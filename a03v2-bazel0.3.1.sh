@@ -17,7 +17,7 @@ sudo wget https://github.com/bazelbuild/bazel/releases/download/0.3.1/bazel-0.3.
 
 sudo chmod +x bazel-0.3.1-installer-linux-x86_64.sh
 
-sudo ./bazel-0.3.1-installer-linux-x86_64.sh --user
+./bazel-0.3.1-installer-linux-x86_64.sh --user
 #bash bazel-0.2.3-installer-linux-x86_64.sh --user --bin=${IDEDIR}/bin
 
 #export PATH=$PATH:~/bin
