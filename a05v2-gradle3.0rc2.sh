@@ -12,7 +12,7 @@ mkdir /home/gradle
 
 wget -N http://downloads.gradle.org/distributions/gradle-${gradle_version}-all.zip
 unzip -oq ./gradle-${gradle_version}-all.zip -d /home/gradle
-ln -sfnv gradle-${gradle_version} /home/gradle/gradle-${gradle_version}
+#ln -sfnv gradle-${gradle_version} /home/gradle/gradle-${gradle_version}
 
 echo "exporting the Path to my .bashrc file so other terminals have the path"
 
