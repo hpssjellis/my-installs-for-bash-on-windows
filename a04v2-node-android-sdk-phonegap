@@ -26,9 +26,10 @@ export PATH=$PATH:/home/android/android-sdk-linux/platform-tools
 export PATH=$PATH:/home/android/android-sdk-linux/build-tools
 
 echo "Check versions"
-git -version
+git --version
 android -h
 phonegap -v
+ant -V
 
 
 mkdir /home/phonegap
