@@ -23,7 +23,7 @@ sudo ./bazel-0.3.1-installer-linux-x86_64.sh --user
 #bash bazel-0.2.3-installer-linux-x86_64.sh --user --bin=${IDEDIR}/bin
 
 #export PATH=$PATH:~/bin
-BAZEL_HOME=/home/bazel
+export BAZEL_HOME=/home/bazel
 export PATH="$PATH:$BAZEL_HOME/bin"
 
 
