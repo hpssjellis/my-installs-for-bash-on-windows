@@ -14,7 +14,7 @@ chmod +x a03-bazel0.3.1.sh
 #chmod +x a0.sh
 #chmod +x a0.sh
 #chmod +x a0.sh
-#chmod +x a0.sh
+chmod +x a05-jupiter-ipython-notebook.sh
 
 
 
@@ -29,6 +29,12 @@ chmod +x a03-bazel0.3.1.sh
 #Now install Bazel, /home directory install not yet working
 ./a03-bazel0.3.1.sh
 
+#install Jupyter (iPython Notebook)
+./a05-jupiter-ipython-notebook.sh
+
+
+
+
 #Android and gradle having issues
 
 
@@ -42,3 +48,15 @@ echo "Only the proven working scripts are in this script"
 echo "You can load the other scripts to see if you can get them working"
 echo "Remember to either use chmod +x and ./filename or just bash then the file name"
 echo "Done installing all scripts"
+
+
+
+echo "Run tensorboard or jupyter (iPython notebook) in there own terminals"
+echo "./a05-jupiter-ipython-notebook.sh"
+echo "./ what ever file runs tensorboard"
+cd /home
+
+
+
+
+
