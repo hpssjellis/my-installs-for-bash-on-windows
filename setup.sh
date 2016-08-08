@@ -2,8 +2,8 @@
 
 echo "Installing all working bash scripts"
 echo "These scripts have probably already been done, you can comment them out if you want with the hashtag #"
-sudo su
-apt-get update
+#sudo su
+#apt-get update
 
 
 #I prefer to use bash then-a-script.sh but most people make the script runnable with chmod
