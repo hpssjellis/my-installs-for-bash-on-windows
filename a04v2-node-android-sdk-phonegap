@@ -8,7 +8,9 @@ sudo apt-get -y install node
 sudo apt-get -y install npm
 
 
-npm install -g phonegap@latest
+#npm install -g phonegap@latest
+npm install -g cordova
+
 sudo apt-get install -y ant
 sudo apt-get install -y lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
 
@@ -41,7 +43,10 @@ cd /home/phonegap
 #get out of sudo
 exit
 
-phonegap create myapp --id "com.myapp.sample" --name "myapp"
+
+#note: phonegap and cordova are kind of the same thing. cordova is opensource, phonegap is Adobes
+#phonegap create myapp --id "com.myapp.sample" --name "myapp"
+cordova create myapp --id "com.myapp.sample" --name "myapp"
 
 
 
