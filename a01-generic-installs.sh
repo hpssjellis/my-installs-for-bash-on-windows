@@ -12,5 +12,9 @@ sudo apt-get -y install git pkg-config g++ zlib1g-dev unzip zip python-pip pytho
 
 
 
+#install java 1.7 for android sdk 
+sudo apt-get install -y lib32z1  openjdk-7-jdk
+
+
 
 echo "Utilities installed"
