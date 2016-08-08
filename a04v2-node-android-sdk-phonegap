@@ -30,4 +30,16 @@ git -version
 android -h
 phonegap -v
 
-phonegap create testapp
+
+mkdir /home/phonegap
+
+cd /home/phonegap
+
+#get out of sudo
+exit
+
+phonegap create myapp --id "com.myapp.sample" --name "myapp"
+
+
+
+echo "Did it all work?"
