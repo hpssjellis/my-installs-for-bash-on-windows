@@ -30,6 +30,8 @@ git --version
 android -h
 phonegap -v
 ant -V
+node -v
+npm -v
 
 
 mkdir /home/phonegap
