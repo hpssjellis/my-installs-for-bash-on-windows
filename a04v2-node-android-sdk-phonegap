@@ -4,7 +4,7 @@
 #sudo su
 #apt-get update
 
-sudo apt-get -y install nodejs
+sudo apt-get -y install node
 sudo apt-get -y install npm
 
 
