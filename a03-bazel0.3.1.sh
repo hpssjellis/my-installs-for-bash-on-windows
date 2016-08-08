@@ -40,9 +40,5 @@ echo "Might be needed if you open a new terminal to reset the path to bazel"
 echo ""
 echo "Did bazel install? Should see the bazel help info"
 
-
-
-
-
-cd ~/mymagenta
+cd /home
 

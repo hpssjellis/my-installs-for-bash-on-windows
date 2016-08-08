@@ -8,8 +8,8 @@ echo "These scripts have probably already been done, you can comment them out if
 
 #I prefer to use bash then-a-script.sh but most people make the script runnable with chmod
 chmod +x a01-generic-installs.sh
-#chmod +x a02-java8.sh
-#chmod +x a0.sh
+chmod +x a02v2-java8.sh
+chmod +x a03-bazel0.3.1.sh
 #chmod +x a0.sh
 #chmod +x a0.sh
 #chmod +x a0.sh
@@ -22,6 +22,15 @@ chmod +x a01-generic-installs.sh
 
 #install basic developer utilities
 ./a01-generic-installs.sh
+
+#Now install Java8 into our /home/jdk directory
+./a02v2-java8.sh
+
+#Now install Bazel, /home directory install not yet working
+./a03-bazel0.3.1.sh
+
+
+
 
 #install java 8
 #./a02-java8.sh
