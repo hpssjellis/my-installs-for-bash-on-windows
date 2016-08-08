@@ -15,6 +15,7 @@ cd /home/jdk/jdk1.8.0_05
 
 ls
 
+echo "Jave 8 installed. Now setting paths for this bash session and others to follow."
 
 #exports so that this bash instance runs well
 export JAVA_HOME=/home/jdk/jdk1.8.0_05
