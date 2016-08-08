@@ -5,6 +5,10 @@
 #apt-get update
 
 
+#NEEDS JAVA 7 RUN THE SWITCH PROGRAM FIRST AND STAY IN THAT WINDOW!
+
+
+
 mkdir /home/android
 
 cd /home/android
