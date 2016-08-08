@@ -29,4 +29,4 @@ export PATH=$PATH:$ANDROID_SDK_HOME/platform-tools
 
 
 echo "Android sdk installed now you have more to do."
-echo "try typing android sdk"
+echo "This works best using bash from the power shell"
