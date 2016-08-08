@@ -29,7 +29,7 @@ chmod +x a03-bazel0.3.1.sh
 #Now install Bazel, /home directory install not yet working
 ./a03-bazel0.3.1.sh
 
-
+#Android and gradle having issues
 
 
 #install java 8
