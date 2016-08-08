@@ -7,7 +7,8 @@
 sudo mkdir /opt/bazel
 cd /opt/bazel
 
-sudo wget https://github.com/bazelbuild/bazel/releases/download/0.3.1/bazel-0.3.1-installer-linux-x86_64.sh -O ~/mymagenta/bazel/bazel-0.3.1-installer-linux-x86_64.sh
+#sudo wget https://github.com/bazelbuild/bazel/releases/download/0.3.1/bazel-0.3.1-installer-linux-x86_64.sh -O ~/mymagenta/bazel/bazel-0.3.1-installer-linux-x86_64.sh
+sudo wget https://github.com/bazelbuild/bazel/releases/download/0.3.1/bazel-0.3.1-installer-linux-x86_64.sh
 
 sudo chmod +x bazel-0.3.1-installer-linux-x86_64.sh
 
@@ -25,6 +26,7 @@ export PATH="$PATH:$BAZEL_HOME/bin"
 echo "Just test if bazel is working"
 #sudo rm bazel-0.3.1-installer-linux-x86_64.sh
 printf "\n\nexport BAZEL_HOME=/opt/bazel\nexport PATH=\$PATH:\$BAZEL_HOME/bin" >> ~/.bashrc 
+#printf "\n\nsource ./bin/bazel-complete.bash"  >> ~/.bashrc
 
 bazel
 
@@ -34,7 +36,7 @@ bazel -h
 
 echo "Might be needed if you open a new terminal to reset the path to bazel"
 
-#printf "\n\nsource ./bin/bazel-complete.bash"  >> ~/.profile
+
 echo ""
 echo "Did bazel install? Should see the bazel help info"
 
