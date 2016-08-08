@@ -4,16 +4,17 @@
 #sudo su
 #apt-get update
 
-cd ~/
-
+mkdir /home/jdk
+cd /home/jdk
 
 wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz
 
-mkdir /home/jdk
-
 tar -zxf jdk-8u5-linux-x64.tar.gz -C /home/jdk
 
-ls /home/jdk
+cd /home/jdk/jdk1.8.0_05
+
+ls
+
 
 #exports so that this bash instance runs well
 export JAVA_HOME=/home/jdk/jdk1.8.0_05
