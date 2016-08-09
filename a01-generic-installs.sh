@@ -2,9 +2,10 @@
 
 #assumes both these commands have been done
 #sudo su
-#apt-get update
 
 
+
+apt-get update
 
 #lots of basic developer pakages. Not a big deal if we try to install them again.
 
