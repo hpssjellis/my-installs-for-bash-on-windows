@@ -15,6 +15,10 @@ cd /home/$USER/android
 
 wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/$USER/android/android-sdk_r24.4.1-linux.tgz
 #wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz 
+
+#must be able to run android-sdk_r24.4.1-linux.tgz
+chmod +x android-sdk_r24.4.1-linux.tgz 
+
 tar -xvzf /home/$USER/android/workspace/android-sdk_r24.4.1-linux.tgz -C /home/$USER/android
 #sudo rm android-sdk_r24.4.1-linux.tgz
 
