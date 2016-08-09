@@ -33,6 +33,8 @@ The setup.sh bash file calls all the other working bash files. If all goes well 
 
 Note I am presently (Aug 9, 2016 testing at a different branch). The steps are slightly different. Presently it is a three hour installation but it may be faster if you monitor for the sudo password entries.
 
+
+Note: will ask for passwords. Running the first three commands may reduce the amount of questions
 ```
 
 sudo su
