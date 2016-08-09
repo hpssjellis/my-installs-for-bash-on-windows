@@ -13,8 +13,8 @@ mkdir /home/$USER/android
 cd /home/$USER/android
 
 
-#sudo wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/$USER/android/android-sdk_r24.4.1-linux.tgz
-wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz 
+wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/$USER/android/android-sdk_r24.4.1-linux.tgz
+#wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz 
 tar -xvzf /home/$USER/android/workspace/android-sdk_r24.4.1-linux.tgz -C /home/$USER/android
 #sudo rm android-sdk_r24.4.1-linux.tgz
 
