@@ -31,3 +31,7 @@ bash a10-android.sh
 # do gradle later
 #a11v2-gradle3.0rc2.sh
 
+
+#check everything
+bash a91-all-checks.sh
+
