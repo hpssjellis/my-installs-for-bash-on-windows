@@ -8,6 +8,13 @@ sudo apt-get -y install libmagickwand-dev
 sudo apt-get install libblas-dev liblapack-dev
 
 
+
+# must be in virtual environment
+#source /home/$USER/virtual-tf/bin/activate
+
+
+
+
 pip install dask[dataframe]
 
 
