@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# has a 5 minute constrain as sudo su
+sudo su <<RUNNING_AS_SUPER_SU
+echo "as me $USER and $MY_USER but running as sudo su"
 
 
 sudo mkdir /home/$USER/bazel
@@ -13,6 +16,9 @@ sudo chmod +x bazel-0.3.1-installer-linux-x86_64.sh
 echo "Presently these next two commands not working well. May have to do from the command line"
 
 sudo ./bazel-0.3.1-installer-linux-x86_64.sh --user
+
+RUNNING_AS_SUPER_SU
+
 #bash bazel-0.2.3-installer-linux-x86_64.sh --user --bin=${IDEDIR}/bin
 
 #export PATH=$PATH:~/bin
@@ -25,6 +31,9 @@ echo "Just test if bazel is working"
 #sudo rm bazel-0.3.1-installer-linux-x86_64.sh
 printf "\n\nexport BAZEL_HOME=/home/\$USER/bazel\nexport PATH=\$PATH:\$BAZEL_HOME/bin" >> ~/.bashrc 
 #printf "\n\nsource ./bin/bazel-complete.bash"  >> ~/.bashrc
+
+
+#might have to try with sudo
 
 bazel
 
