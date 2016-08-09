@@ -6,7 +6,7 @@
 
 #NEEDS JAVA 7 RUN THE SWITCH PROGRAM FIRST AND STAY IN THAT WINDOW!
 
-
+bash a08-switch-java-1.7.sh
 
 mkdir /home/$USER/android
 
