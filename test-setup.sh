@@ -11,7 +11,7 @@ bash a03v2-bazel0.3.1.sh
 #running in virtual
 
 bash a04a-tensorflow.sh
-bash a04b-run-virtual
+#bash a04b-run-virtual
 
 bash a04d-skflow.sh
 bash a05a-jupyter-ipython-notebook.sh
