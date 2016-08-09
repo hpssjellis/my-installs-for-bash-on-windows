@@ -20,7 +20,7 @@ export JAVA_HOME=/home/$USER/jdk/jdk1.8.0_05
 export PATH=$PATH:$JAVA_HOME/bin
 
 #printf so that a new instance (window) using bash will still run.
-printf "\n\nexport JAVA_HOME=/home/\$USER/jdk/jdk1.8.0_05\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
+printf "\n\nexport JAVA_HOME=/home/$USER/jdk/jdk1.8.0_05\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
 
 
 
