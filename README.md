@@ -9,7 +9,13 @@ To install all the working packages you need this repository on your windows com
 
 One way to do this would be with the following commands. You can copy each line from here and right click to paste into the bash area.
 
+Note: will ask for passwords. Running the first three commands may reduce the amount of questions
+
 ```
+
+sudo su
+
+exit
 
 sudo apt-get install -y git
 
@@ -24,6 +30,27 @@ bash setup.sh
 ```
 
 The setup.sh bash file calls all the other working bash files. If all goes well this will install several development systems. Bash files not working well will not be called by the main setup.sh. You can look at these individually and see what is going wrong with them.
+
+Note I am presently (Aug 9, 2016 testing at a different branch). The steps are slightly different
+
+```
+
+sudo su
+
+exit
+
+sudo apt-get install -y git
+
+cd ~/
+
+git clone https://github.com/hpssjellis/my-installs-for-bash-on-windows.git --branch aug9-2016-no-sudo-su
+
+cd ~/my-installs-for-bash-on-windows
+
+bash test-setup.sh
+
+```
+
 
 
 
