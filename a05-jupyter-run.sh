@@ -7,7 +7,11 @@ echo "On windows onpe a web browser to http://localhost:8080"
 echo "No more commands for this terminal"
 echo "ctrl c then quickly y to quit"
 
+
+cd /home
+
 #jupyter notebook --ip $IP --port $PORT --no-browser
-jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
+#jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
+jupyter notebook --ip=localhost --port=8080 --no-browser
 
 
