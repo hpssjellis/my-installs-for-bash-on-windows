@@ -11,15 +11,13 @@ One way to do this would be with the following commands. You can copy each line 
 
 ```
 
-sudo su
+sudo apt-get install -y git
 
-apt-get install -y git
-
-cd /home
+cd ~/
 
 git clone https://github.com/hpssjellis/my-installs-for-bash-on-windows.git
 
-cd /home/my-installs-for-bash-on-windows
+cd ~/my-installs-for-bash-on-windows
 
 bash setup.sh
 
