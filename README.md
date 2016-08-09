@@ -41,6 +41,8 @@ bash setup.sh
 8. chmod +x filename.sh allows a bash file to be ran
 9. ./filename.sh runs the bash file
 10. bash filename.sh can also run a bash file without the above double step.
-11. 
+11. find -name '*myfilename*' finds files or directories
+12. find -name 'mydir' -type d finds only folders with that exact name. Note list ./ when folder is in your home directory instead of ~/
+13. 
 
 
