@@ -3,6 +3,9 @@
 
 #apt-get update
 
+echo "deactivate virtual environment if found"
+deactivate
+
 sudo apt-get -y install node npm ant
 
 
