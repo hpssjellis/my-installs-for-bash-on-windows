@@ -31,7 +31,7 @@ bash setup.sh
 
 The setup.sh bash file calls all the other working bash files. If all goes well this will install several development systems. Bash files not working well will not be called by the main setup.sh. You can look at these individually and see what is going wrong with them.
 
-Note I am presently (Aug 9, 2016 testing at a different branch). The steps are slightly different
+Note I am presently (Aug 9, 2016 testing at a different branch). The steps are slightly different. Presently it is a three hour installation but it may be faster if you monitor for the sudo password entries.
 
 ```
 
