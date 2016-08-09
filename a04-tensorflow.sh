@@ -71,3 +71,6 @@ ln -s /home/$USER/virtual-tf/lib/python2.7/site-packages/tensorflow /home/$USER/
 echo "------------------------Tensorflow installed--------------------------------------"
 echo "--------------------------------------------------------------"
 echo "--------------------------------------------------------------"
+
+cd /home/$USER
+
