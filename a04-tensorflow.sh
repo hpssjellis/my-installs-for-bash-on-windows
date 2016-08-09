@@ -17,7 +17,7 @@ echo ". "
 
 echo "Activate the environment use deactivate to get your cursor back "
 echo "Note no paths were needed"
-echo following must be used to re-activate virtual environment for tensorflow
+echo "The following must be used to re-activate virtual environment for tensorflow"
 echo "source ~/virtual-tf/bin/activate"
 source /home/$USER/virtual-tf/bin/activate 
 
