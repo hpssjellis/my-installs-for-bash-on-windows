@@ -5,6 +5,8 @@
 # ./setup.sh
 
 
+#echo "checking if in virtual environment. Can run this multiple times"
+source /home/$USER/virtual-tf/bin/activate
 
 
 #commented out batch files are from another github site at https://github.com/hpssjellis/TensorFlow-Android-Camera-Demo-on-Cloud9
@@ -23,7 +25,7 @@ cd /home/$USER/mymagenta
 
 echo "Bazel should already be installed!"
 
-bazel -h
+#bazel -h
 
 echo "Press enter, if issues press ctrl-C and find out the mistake, probably the path in ~/.bashrc"
 
@@ -139,9 +141,9 @@ echo "Might as well build the training file structure here"
 #bazel build //magenta/models:basic_rnn_train
 
 #changed jul15, 2016 The three types of rnn 
-bazel build //magenta/models/basic_rnn:basic_rnn_train
-bazel build //magenta/models/lookback_rnn:lookback_rnn_train
-bazel build //magenta/models/attention_rnn:attention_rnn_train
+#bazel build //magenta/models/basic_rnn:basic_rnn_train
+#bazel build //magenta/models/lookback_rnn:lookback_rnn_train
+#bazel build //magenta/models/attention_rnn:attention_rnn_train
 
 echo "and setup a spot for temporary files"
 echo "not sure if magenta can make the folders for you????"
@@ -277,8 +279,8 @@ cd /home/$USER/mymagenta/magenta
 
 echo "Lest be brave and try to run the hello music AI world bash file"
 echo "a01-helloworld.sh should have been copied into the magenta workspace"
-chmod +x a01-rnn_basic.sh
-./a01-rnn_basic.sh
+#chmod +x a01-rnn_basic.sh
+#./a01-rnn_basic.sh
 
 echo "Import your midi files from /tmp/basic_rnn_generated to https://onlinesequencer.net/"
 echo""
