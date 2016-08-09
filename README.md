@@ -23,6 +23,7 @@ bash setup.sh
 
 ```
 
+The setup.sh bash file calls all the other working bash files. If all goes well this will install several development systems. Bash files not working well will not be called by the main setup.sh. You can look at these individually and see what is going wrong with them.
 
 
 
