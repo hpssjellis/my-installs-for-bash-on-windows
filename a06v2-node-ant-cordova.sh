@@ -1,7 +1,6 @@
 #!/bin/bash
 
-#assumes both these commands have been done
-#sudo su
+
 #apt-get update
 
 sudo apt-get -y install node npm ant
@@ -28,12 +27,11 @@ which cordova
 
 echo "Now lets test phonegap cordova"
 
-mkdir /home/cordova
+mkdir /home/$USER/cordova
 
-cd /home/cordova
+cd /home/$USER/cordova
 
-#get out of sudo
-#exit
+
 
 
 #note: phonegap and cordova are kind of the same thing. cordova is opensource, phonegap is Adobes
@@ -43,3 +41,7 @@ cordova create myapp --id "com.myapp.sample" --name "myapp"
 
 
 echo "Did it all work?"
+
+cd /home/$USER
+
+
