@@ -58,15 +58,15 @@ bash test-setup.sh
 
 1. Search for Bash On Windows and right click pin it to the task bar
 2. Shift click the task bar icon to load multiple windows. So you can check if things are installing properly
-3. cd ~/ gets to your home directory.
-4. cd foldername goes into that folder
-4. cd .. goes up a directory
+3. 'cd ~/' gets to your home directory.
+4. 'cd foldername' goes into that folder
+4. 'cd .'. goes up a directory. note the space before the dots
 5. tab auto fills the name and pings if the name is not complete
-6. ls condensed lists your directory
-7. ls -l long list with permissions
-8. chmod +x filename.sh allows a bash file to be ran
-9. ./filename.sh runs the bash file
-10. bash filename.sh can also run a bash file without the above double step.
-11. 
+6. 'ls' condensed lists of everything in your directory directory
+7. 'ls -la' long list with permissions and hidden files, the ones with  dot in front of them
+8. 'chmod +x filename.s'h allows a bash file to be ran
+9. './filename.sh' runs the bash file
+10. 'bash filename.sh' can also run a bash file without the above double step.
+ 
 
 
