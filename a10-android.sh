@@ -13,16 +13,16 @@ mkdir /home/$USER/android
 cd /home/$USER/android
 
 
-sudo wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/$USER/android/android-sdk_r24.4.1-linux.tgz
-$sudo wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz 
-sudo tar -xvzf /home/$USER/android/workspace/android-sdk_r24.4.1-linux.tgz -C /home/$USER/android
+#sudo wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/$USER/android/android-sdk_r24.4.1-linux.tgz
+wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz 
+tar -xvzf /home/$USER/android/workspace/android-sdk_r24.4.1-linux.tgz -C /home/$USER/android
 #sudo rm android-sdk_r24.4.1-linux.tgz
 
 
 
 echo "export paths to the .profile file so other terminals can use android sdk"
 
-printf "\n\nexport ANDROID_SDK_HOME=/home/\$USER/android/android-sdk-linux\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/tools\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/platform-tools"  >> ~/.bashrc
+printf "\n\nexport ANDROID_SDK_HOME=/home/$USER/android/android-sdk-linux\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/tools\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/platform-tools"  >> ~/.bashrc
 
 echo "export paths here so this bash file can use android sdk"
 export ANDROID_SDK_HOME=/home/$USER/android/android-sdk-linux
