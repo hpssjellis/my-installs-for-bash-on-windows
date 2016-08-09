@@ -12,7 +12,8 @@ sudo apt-get install -y libblas-dev liblapack-dev
 # must be in virtual environment
 #source /home/$USER/virtual-tf/bin/activate
 
-
+#echo "checking if in virtual environment. Can run this multiple times"
+source /home/$USER/virtual-tf/bin/activate
 
 
 pip install dask[dataframe]
