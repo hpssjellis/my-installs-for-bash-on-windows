@@ -73,5 +73,11 @@ bash test-setup.sh
 11. right-click to paste into the bash terminal. Useful to copy from windows and paste into linux
 12. If something is selected then right-click to copy
  
-
+Weird Terminal text colors
+1. symlinks are cyan
+2. folders without write acces are dark blue
+3. folders with write acces have a background that is green and blue letters
+4. text files have white letters
+5. runnable files have lime green letters
+6. what is red?
 
