@@ -5,7 +5,7 @@
 
 sudo update-java-alternatives -l
 
-read
+#read
 echo "Switch java only while this bash session is valid"
 echo "ctrl-c to exit if other java is not /usr/lib/jvm/java-1.7.0-openjdk-amd64"
 
