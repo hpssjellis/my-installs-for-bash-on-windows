@@ -37,3 +37,5 @@ update-alternatives --display java
 update-alternatives --display javac
 
 java -version
+
+cd /home/$USER
