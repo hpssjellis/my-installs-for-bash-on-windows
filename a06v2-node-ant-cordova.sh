@@ -10,7 +10,7 @@ sudo apt-get -y install node npm ant
 
 
 #npm install -g phonegap@latest
-npm install -g cordova
+sudo npm install -y -g cordova
 
 echo "Check versions"
 
