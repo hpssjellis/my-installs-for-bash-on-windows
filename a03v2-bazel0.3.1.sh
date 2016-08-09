@@ -25,11 +25,13 @@ RUNNING_AS_SUPER_SU
 export BAZEL_HOME=/home/$USER/bazel
 export PATH="$PATH:$BAZEL_HOME/bin"
 
-
+# change ownership and rights for bazel folder recursively -R
+#chown -R $USER:$USER /home/$USER/bazel
+#chmod -R 777 /home/$USER/bazel
 
 echo "Just test if bazel is working"
 #sudo rm bazel-0.3.1-installer-linux-x86_64.sh
-printf "\n\nexport BAZEL_HOME=/home/\$USER/bazel\nexport PATH=\$PATH:\$BAZEL_HOME/bin" >> ~/.bashrc 
+printf "\n\nexport BAZEL_HOME=/home/$USER/bazel\nexport PATH=\$PATH:\$BAZEL_HOME/bin" >> ~/.bashrc 
 #printf "\n\nsource ./bin/bazel-complete.bash"  >> ~/.bashrc
 
 
