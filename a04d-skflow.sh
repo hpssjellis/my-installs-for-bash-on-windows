@@ -5,7 +5,7 @@ sudo apt-get -y install libmagickwand-dev
 
 
 # for skflow
-sudo apt-get install libblas-dev liblapack-dev
+sudo apt-get install -y libblas-dev liblapack-dev
 
 
 
@@ -36,7 +36,7 @@ echo "skflow pip stuff installed"
 echo "now grab the github site of examples"
 
 
-cd /home/#USER
+cd /home/$USER
 
 git clone https://github.com/hpssjellis/forth-tensorflow.git
 
