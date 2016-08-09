@@ -10,6 +10,9 @@ To install all the working packages you need this repository on your windows com
 One way to do this would be with the following commands. You can copy each line from here and right click to paste into the bash area.
 
 ```
+
+sudo su
+
 apt-get install -y git
 
 cd /home
