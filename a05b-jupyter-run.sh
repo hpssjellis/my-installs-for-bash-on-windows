@@ -8,7 +8,7 @@ echo "No more commands for this terminal"
 echo "ctrl c then quickly y to quit"
 
 
-cd /home
+cd /home/$USER
 
 #jupyter notebook --ip $IP --port $PORT --no-browser
 #jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
