@@ -25,3 +25,7 @@ echo "Note java 7 paths not entered into .bashrc so that java 8 can be installed
 
 
 echo "Utilities installed"
+
+
+cd /home/$USER
+
