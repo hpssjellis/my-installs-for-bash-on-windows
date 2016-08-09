@@ -48,6 +48,6 @@ ln -s /home/$USER/tensorflow-from-repo/tensorflow/tensorflow/examples /home/$USE
 
 
 
-
+cd /home/$USER
 
 
