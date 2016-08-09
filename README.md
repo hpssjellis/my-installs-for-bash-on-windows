@@ -30,6 +30,7 @@ bash setup.sh
 1. Search for Bash On Windows and right click pin it to the task bar
 2. Shift click the task bar icon to load multiple windows. So you can check if things are installing properly
 3. cd ~/ gets to your home directory.
+4. cd foldername goes into that folder
 4. cd .. goes up a directory
 5. tab auto fills the name and pings if the name is not complete
 6. ls condensed lists your directory
