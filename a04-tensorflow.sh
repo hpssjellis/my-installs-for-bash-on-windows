@@ -9,6 +9,7 @@
 
 echo "Make the tensorflow virtual environment"
 
+
 virtualenv --system-site-packages /home/$USER/virtual-tf
 
 echo "--------------------------------------------------------------"
