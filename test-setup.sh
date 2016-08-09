@@ -20,7 +20,9 @@ bash a07-magenta.sh
 # out of virtual environment
 deactivate
 
-bash a08-switch-java-1.7.sh
+bash a91-switch-to-java-1.7.sh
+
+java -version
 
 bash a06v2-node-ant-cordova.sh
 
