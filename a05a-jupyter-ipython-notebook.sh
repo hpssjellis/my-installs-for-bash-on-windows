@@ -7,7 +7,7 @@ source /home/$USER/virtual-tf/bin/activate
 
 echo "---------------------Try jupiter ipython notebook-----------------------------------------"
 echo ". "
-
+cd /home/$USER
 
 pip install --upgrade ipython
 pip install --upgrade jupyter
