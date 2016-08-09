@@ -57,12 +57,14 @@ cd /home/tensorflow-from-repo
 
 git clone --recurse-submodules https://github.com/tensorflow/tensorflow
 
-ln -s /home/tensorflow-from-repo/tensorflow/tensorflow/examples /home/$USER/b01-link-to-tf-examples
+ln -s /home/tensorflow-from-repo/tensorflow/tensorflow/examples /home/$USER/link01-link-to-tf-examples
 
 
 echo "Try making a link to the installed tensorflow not just the repo cloned but we need to find it"
 echo "bash-on-windows may have trouble with double quotes inside symlinks"
-ln -s /home/ubuntu//virtual-tf/lib/python2.7/site-packages/tensorflow /home/$USER/b02-link-to-pip-tensorflow
+mkdir /home/root
+
+ln -s /root/virtual-tf/lib/python2.7/site-packages/tensorflow /home/$USER/link02-pip-tensorflow-link
 
 #whereis tensorflow
 #which tensorflow
