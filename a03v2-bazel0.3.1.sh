@@ -20,7 +20,7 @@ chmod +x bazel-0.3.1-installer-linux-x86_64.sh
 
 echo "Presently these next two commands not working well. May have to do from the command line"
 
-./bazel-0.3.1-installer-linux-x86_64.sh --user
+./bazel-0.3.1-installer-linux-x86_64.sh --prefix=/home/$USER/bazel
 
 
 # done running as supper user
