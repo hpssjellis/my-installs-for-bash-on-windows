@@ -41,13 +41,13 @@ printf "\n\nexport JAVA_HOME=/home/$USER/jdk/jdk1.8.0_05\nexport PATH=\$PATH:\$J
 
 #The last number 1100 is the priority mine had java 7 at 1097 online help site had these were set at 100
 
-update-alternatives --install /usr/bin/java java /home/$USER/jdk/jdk1.8.0_05/bin/java 1100
+sudo update-alternatives --install /usr/bin/java java /home/$USER/jdk/jdk1.8.0_05/bin/java 1100
 
-update-alternatives --install /usr/bin/javac javac /home/$USER/jdk/jdk1.8.0_05/bin/javac 1100
+sudo update-alternatives --install /usr/bin/javac javac /home/$USER/jdk/jdk1.8.0_05/bin/javac 1100
 
-update-alternatives --display java
+sudo update-alternatives --display java
 
-update-alternatives --display javac
+sudo update-alternatives --display javac
 
 java -version
 
