@@ -16,6 +16,39 @@ echo ""
 echo "--------------------------------------------------------------"
 
 
+echo "First checking the node version"
+nodejs --version
+
+echo "--------------------------------------------------------------"
+echo ". "
+echo "Now checking where node is installed"
+readlink -f $(which nodejs)
+echo ""
+echo "--------------------------------------------------------------"
+
+
+echo "First checking the npm version"
+npm --version
+
+echo "--------------------------------------------------------------"
+echo ". "
+echo "Now checking where node is installed"
+readlink -f $(which npm)
+echo ""
+echo "--------------------------------------------------------------"
+
+
+
+echo "First checking the cordova version"
+cordova --version
+
+echo "--------------------------------------------------------------"
+echo ". "
+echo "Now checking where node is installed"
+readlink -f $(which cordova)
+echo ""
+echo "--------------------------------------------------------------"
+
 
 
 echo "First checking the Python version"
