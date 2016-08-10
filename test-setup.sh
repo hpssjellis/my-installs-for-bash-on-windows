@@ -18,11 +18,11 @@ bash a05a-jupyter-ipython-notebook.sh
 bash a07-magenta.sh
 
 # out of virtual environment
-deactivate
+#deactivate
 
-bash a91-switch-to-java-1.7.sh
+#bash a91-switch-to-java-1.7.sh
 
-java -version
+#java -version
 
 bash a06v2-node-ant-cordova.sh
 
