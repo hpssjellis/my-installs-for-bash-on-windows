@@ -3,15 +3,25 @@
 
 
 mkdir /home/$USER/jdk
+
+
+sudo su <<RUNNING_AS_SUPER_SU
+
 cd /home/$USER/jdk
 
 wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz
 
 tar -zxf jdk-8u5-linux-x64.tar.gz -C /home/$USER/jdk
 
-cd /home/$USER/jdk/jdk1.8.0_05
 
-ls
+RUNNING_AS_SUPER_SU
+
+
+
+
+#cd /home/$USER/jdk/jdk1.8.0_05
+
+#ls
 
 echo "Jave 8 installed. Now setting paths for this bash session and others to follow."
 
