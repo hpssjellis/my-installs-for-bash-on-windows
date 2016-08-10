@@ -51,4 +51,10 @@ sudo update-alternatives --display javac
 
 java -version
 
+
+
+echo "To switch java versions use the following and choose the priority number"
+echo "sudo update-alternatives --config java"
+
+
 cd /home/$USER
