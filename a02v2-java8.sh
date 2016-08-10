@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#note most important line to run manually
+#sudo update-alternatives --config java
+#then choose the number of the java you want
 
 
 mkdir /home/$USER/jdk
