@@ -62,7 +62,10 @@ echo ""
 readlink -f $(which javac)
 echo "--------------------------------------------------------------"
 echo ". "
-
+echo "checking how many java's and the man page"
+readlink -f $(whereis java)
+echo "--------------------------------------------------------------"
+echo ". "
 
 
 echo "Now checking if Android SDK is installed"
