@@ -3,6 +3,11 @@
 
 bash a01-generic-installs.sh
 
+bash a10v2-android.sh
+
+bash a06v2-node-ant-cordova.sh
+
+
 bash a02v2-java8.sh
 
 bash a03v2-bazel0.3.1.sh
@@ -24,7 +29,7 @@ bash a07-magenta.sh
 
 #java -version
 
-bash a06v2-node-ant-cordova.sh
+
 
 bash a10-android.sh
 
