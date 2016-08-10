@@ -3,13 +3,26 @@
 
 
 
+
+
+echo "First checking the Git version"
+git --version
+
+echo "--------------------------------------------------------------"
+echo ". "
+echo "Now checking where git is installed"
+readlink -f $(which git)
+echo ""
+echo "--------------------------------------------------------------"
+
+
+
+
 echo "First checking the Python version"
 python --version
 
 echo "--------------------------------------------------------------"
 echo ". "
-
-
 echo "Now checking where python is installed"
 readlink -f $(which python)
 echo ""
