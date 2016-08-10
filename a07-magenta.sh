@@ -84,15 +84,15 @@ echo "copy the bash file a01-helloworld.sh to the magenta workspace folder"
 
 #cp a* ~/mymagenta/magenta
 
-sudo cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a01-rnn_basic.sh /home/$USER/mymagenta/magenta/a01-rnn_basic.sh
-sudo cp/home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a02-rnn_basic_retrain.sh  /home/$USER/mymagenta/magenta/a02-rnn_basic_retrain.sh
-sudo cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a03-extra-installs.sh /home/$USER/mymagenta/magenta/a03-extra-installs.sh
+cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a01-rnn_basic.sh /home/$USER/mymagenta/magenta/a01-rnn_basic.sh
+cp/home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a02-rnn_basic_retrain.sh  /home/$USER/mymagenta/magenta/a02-rnn_basic_retrain.sh
+cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a03-extra-installs.sh /home/$USER/mymagenta/magenta/a03-extra-installs.sh
 
-sudo cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a04-midi-to-mp3.sh /home/$USER/mymagenta/magenta/a04-midi-to-mp3.sh
-sudo cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a05-lookback.sh /home/$USER/mymagenta/magenta/a05-lookback.sh
-sudo cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a06-attention.sh /home/$USER/mymagenta/magenta/a06-attention.sh
+cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a04-midi-to-mp3.sh /home/$USER/mymagenta/magenta/a04-midi-to-mp3.sh
+cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a05-lookback.sh /home/$USER/mymagenta/magenta/a05-lookback.sh
+cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a06-attention.sh /home/$USER/mymagenta/magenta/a06-attention.sh
 
-sudo cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a08-just-output.sh /home/$USER/mymagenta/magenta/a08-just-output.sh
+cp /home/$USER/mymagenta/google-magenta-midi-music-on-linux-hello-world/a08-just-output.sh /home/$USER/mymagenta/magenta/a08-just-output.sh
 
 
 
@@ -149,11 +149,11 @@ echo "and setup a spot for temporary files"
 echo "not sure if magenta can make the folders for you????"
 
 
-sudo mkdir /tmp/basic_rnn_generated
-sudo mkdir /tmp/lookback_rnn
-sudo mkdir /tmp/attention_rnn
-sudo mkdir /tmp/lookback_rnn/generated
-sudo mkdir /tmp/attention_rnn/generated
+mkdir /tmp/basic_rnn_generated
+mkdir /tmp/lookback_rnn
+mkdir /tmp/attention_rnn
+mkdir /tmp/lookback_rnn/generated
+mkdir /tmp/attention_rnn/generated
 
 
 
@@ -169,13 +169,13 @@ cd /home/$USER/mymagenta
 echo "Add a few symlinks to make life easier"
 
 #ln -s /tmp/basic_rnn_generated a-link-to-generated-midi
-sudo ln -s /home/$USER/mymagenta/magenta/magenta/testdata aa01-link-to-your-midi
-sudo ln -s /home/$USER/mymagenta/magenta/models/shared aa02-link-to-primer-midi
+ln -s /home/$USER/mymagenta/magenta/magenta/testdata aa01-link-to-your-midi
+ln -s /home/$USER/mymagenta/magenta/models/shared aa02-link-to-primer-midi
 
-sudo ln -s /tmp aa03-link-to-tmp-all-runs
-sudo ln -s /tmp/basic_rnn_generated aa04-link-to-basic_rnn-generated
-sudo ln -s /tmp/lookback_rnn/generated aa05-link-to-lookback-generated
-sudo ln -s /tmp/attention_rnn/generated aa06-link-to-attention-generated
+ln -s /tmp aa03-link-to-tmp-all-runs
+ln -s /tmp/basic_rnn_generated aa04-link-to-basic_rnn-generated
+ln -s /tmp/lookback_rnn/generated aa05-link-to-lookback-generated
+ln -s /tmp/attention_rnn/generated aa06-link-to-attention-generated
 
 
 
@@ -300,7 +300,7 @@ echo "If things don't seem correct ctrl-C to quit tensorboard, Note: this must b
 #tensorboard --logdir=basic_rnn:/tmp/basic_rnn,loopback:/tmp/lookback_rnn,attention:/tmp/attention_rnn
 
 
-
+cd /home/$USER
 
 
 
