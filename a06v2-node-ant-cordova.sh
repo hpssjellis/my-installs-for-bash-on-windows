@@ -28,12 +28,14 @@ sudo su <<UNTIL_STOP_AS_SUPER_SU
 UNTIL_STOP_AS_SUPER_SU
 
 
+# has a 5 minute constrain as sudo su but with your home directory
+echo "Running as sudo su but in the home folder of $USER"
+sudo su <<UNTIL_STOP_AS_SUPER_SU
+  cd /home/$USER
+  npm install cordova 
+UNTIL_STOP_AS_SUPER_SU
 
 
-echo "Now that npm is installed just use normal sudo npm install"
-
-cd /home/$USER
-sudo npm install cordova 
 
 
 
