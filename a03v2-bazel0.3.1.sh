@@ -49,6 +49,10 @@ printf "\n\nexport BAZEL_HOME=/home/$USER/bazel\nexport PATH=\$PATH:\$BAZEL_HOME
 #printf "\n\nsource ./bin/bazel-complete.bash"  >> ~/.bashrc
 
 
+# maybe put into the bashrc  source /home/$USER/bazel/lib/bazel/bin/bazel-complete.bash
+
+
+
 #might have to try with sudo
 
 bazel
