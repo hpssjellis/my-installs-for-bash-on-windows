@@ -28,10 +28,11 @@ bash a06v2-node-ant-cordova.sh
 
 bash a10-android.sh
 
-# do gradle later
-#a11v2-gradle3.0rc2.sh
+bash a11v3-gradle.sh
 
 
-#check everything
 bash a91-all-checks.sh
+
+
+
 
