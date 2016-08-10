@@ -38,8 +38,13 @@ UNTIL_STOP_AS_SUPER_SU
 
 
 
+echo "A link is needed for cordova to work"
 
+mkdir /home/$USER/cordova
 
+cd /home/$USER/cordova
+
+sudo ln -s `which nodejs` /usr/bin/node
 
 
 echo "Check versions"
@@ -47,19 +52,17 @@ echo "Check versions"
 cordova -v
 node -v
 npm -v
-ant -V
+ant -v
 #note the weird capital V for ant?
 
 
 
 echo "Now lets test phonegap cordova"
 
-mkdir /home/$USER/cordova
+
+
 
 cd /home/$USER/cordova
-
-
-
 
 #note: phonegap and cordova are kind of the same thing. cordova is opensource, phonegap is Adobes
 #phonegap create myapp --id "com.myapp.sample" --name "myapp"
