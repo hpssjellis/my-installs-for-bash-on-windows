@@ -3,14 +3,43 @@
 
 #apt-get update
 
-echo "deactivate virtual environment if found"
-deactivate
 
-sudo apt-get -y install node npm ant
+# has a 5 minute constrain as sudo su but with your home directory
+echo "Running as sudo su but in the home folder of $USER"
+sudo su <<UNTIL_STOP_AS_SUPER_SU
+  cd /home/$USER
+  sudo apt-get -y install node 
+UNTIL_STOP_AS_SUPER_SU
 
 
-#npm install -g phonegap@latest
-sudo npm install -y -g cordova
+# has a 5 minute constrain as sudo su but with your home directory
+echo "Running as sudo su but in the home folder of $USER"
+sudo su <<UNTIL_STOP_AS_SUPER_SU
+  cd /home/$USER
+  sudo apt-get -y install npm
+UNTIL_STOP_AS_SUPER_SU
+
+
+# has a 5 minute constrain as sudo su but with your home directory
+echo "Running as sudo su but in the home folder of $USER"
+sudo su <<UNTIL_STOP_AS_SUPER_SU
+  cd /home/$USER
+  sudo apt-get -y install ant
+UNTIL_STOP_AS_SUPER_SU
+
+
+
+
+# has a 5 minute constrain as sudo su but with your home directory
+echo "Running as sudo su but in the home folder of $USER"
+sudo su <<UNTIL_STOP_AS_SUPER_SU
+  cd /home/$USER
+  sudo npm install -y -g cordova 
+UNTIL_STOP_AS_SUPER_SU
+
+
+
+
 
 echo "Check versions"
 
@@ -21,12 +50,6 @@ ant -V
 #note the weird capital V for ant?
 
 
-Echo "Node is sometimes hard to find to make paths to"
-whereis node
-which node
-
-whereis cordova
-which cordova
 
 echo "Now lets test phonegap cordova"
 
