@@ -16,7 +16,7 @@ echo "Installs Magenta to a folder in your home directory called mymagenta"
 
 
 
-sudo mkdir /home/$USER/mymagenta
+mkdir /home/$USER/mymagenta
 
 cd /home/$USER/mymagenta
 
