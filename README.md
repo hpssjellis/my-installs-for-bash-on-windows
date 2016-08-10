@@ -58,8 +58,8 @@ bash test-setup.sh
 
 ## Bash On Windows Tips
 
-1. Search for Bash On Windows and right click pin it to the task bar
-2. Shift click the task bar icon to load multiple windows. So you can check if things are installing properly
+1. Search for "Bash On Windows", then right-click it and pin it to the task bar
+2. Shift-click the task bar icon for bash to load multiple bash terminals. So you can check if things are installing properly
 3. 'cd ~/' gets to your home directory.
 4. 'pwd' shows your full file path. Very usefull~
 4. 'cd foldername' goes into that folder
