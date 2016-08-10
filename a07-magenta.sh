@@ -74,7 +74,7 @@ git clone https://github.com/tensorflow/magenta.git
 echo "Grab my github site to load a few bash files"
 cd /home/$USER/mymagenta
 
-sudo git clone https://github.com/hpssjellis/google-magenta-midi-music-on-linux-hello-world.git
+git clone https://github.com/hpssjellis/google-magenta-midi-music-on-linux-hello-world.git
 
 
 echo "copy the bash file a01-helloworld.sh to the magenta workspace folder"
