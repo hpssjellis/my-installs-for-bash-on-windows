@@ -81,3 +81,10 @@ Weird Terminal text colors
 5. runnable files have lime green letters
 6. what is red?
 
+
+
+
+Java issues
+1. 'java -version' tells you which is the default java ofor that terminal
+2. need to use 'sudo update-alternatives --config java' then choose the priority number of the version of java you wish to run in that terminal
+3. 
