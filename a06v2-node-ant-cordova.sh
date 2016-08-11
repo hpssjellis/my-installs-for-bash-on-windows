@@ -9,6 +9,10 @@ echo "Running as sudo su but in the home folder of $USER"
 sudo su <<UNTIL_STOP_AS_SUPER_SU
   cd /home/$USER
   sudo apt-get -y install node 
+  
+  #since strangely called nodejs need a link for just node
+  ln -s `which nodejs` /usr/bin/node
+  
 UNTIL_STOP_AS_SUPER_SU
 
 
@@ -37,12 +41,13 @@ UNTIL_STOP_AS_SUPER_SU
 
 
 echo "installing Cordova"
-# has a 5 minute constrain as sudo su but with your home directory
-echo "Running as sudo su but in the home folder of $USER"
-sudo su <<UNTIL_STOP_AS_SUPER_SU
-  cd /home/$USER
-  npm install cordova 
-UNTIL_STOP_AS_SUPER_SU
+cd /home/$USER
+mkdir /home/$USER/cordova
+cd /home/$USER.cordova
+
+
+sudo npm install -g cordova 
+
 
 
 
@@ -53,16 +58,15 @@ mkdir /home/$USER/cordova
 
 cd /home/$USER/cordova
 
-sudo ln -s `which nodejs` /usr/bin/node
 
-
-echo "Check versions"
+echo "Check versions needed for phonegap cordova"
 
 cordova -v
 node -v
 npm -v
 ant -v
-#note the weird capital V for ant?
+gradle -v
+
 
 
 
