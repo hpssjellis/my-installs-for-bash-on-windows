@@ -145,7 +145,7 @@ echo ". "
 
 echo "Now checking if ant is installed note capital V"
 
-ant -v
+ant -version
 echo ""
 echo "echo "Now checking where ant is installed"
 readlink -f $(which ant)
@@ -156,7 +156,7 @@ echo ". "
 
 
 
-
+gcc -v
 
 echo "echo "Now checking where gcc is installed"
 readlink -f $(which gcc)
@@ -167,7 +167,10 @@ echo ". "
 
 
 
-echo "next list this directory"
+echo "next list this directory cd /home/$USER"
+
+cd /home/$USER
+
 pwd
 echo ""
 ls -la  
@@ -183,4 +186,4 @@ echo "to check the root bashrc (BE very careful screw up here and need to reform
 echo "sudo nano /root/.bashrc"
 
 
-echo "How to check if tensorflow or magenta is installed??"
+
