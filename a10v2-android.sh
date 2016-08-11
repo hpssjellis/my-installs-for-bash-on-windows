@@ -17,7 +17,7 @@ sudo su <<DONE_AS_SUPER_SU
 
 DONE_AS_SUPER_SU
 
-
+sudo chown -R $USER:$USER /home/$USER/android/android-sdk-linux
 
 echo "export paths to the .profile file so other terminals can use android sdk"
 
