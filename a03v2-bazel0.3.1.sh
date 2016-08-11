@@ -1,20 +1,24 @@
 #!/bin/bash
 
 
+#needs android version 8
+
 mkdir /home/$USER/bazel
 cd /home/$USER/bazel
 
 
 echo "Installing bazel"
+
+
+wget https://github.com/bazelbuild/bazel/releases/download/0.3.1/bazel-0.3.1-installer-linux-x86_64.sh -O /home/$USER/bazel/bazel-0.3.1-installer-linux-x86_64.sh
+#wget https://github.com/bazelbuild/bazel/releases/download/0.3.1/bazel-0.3.1-installer-linux-x86_64.sh
+
 # has a 5 minute constrain as sudo su
 sudo su <<RUNNING_AS_SUPER_SU
 echo "as me $USER and $MY_USER but running as sudo su"
 
 cd /home/$USER/bazel
 
-
-wget https://github.com/bazelbuild/bazel/releases/download/0.3.1/bazel-0.3.1-installer-linux-x86_64.sh -O /home/$USER/bazel/bazel-0.3.1-installer-linux-x86_64.sh
-#wget https://github.com/bazelbuild/bazel/releases/download/0.3.1/bazel-0.3.1-installer-linux-x86_64.sh
 
 chmod +x bazel-0.3.1-installer-linux-x86_64.sh
 
