@@ -191,6 +191,7 @@ ln -s /tmp/attention_rnn/generated aa06-link-to-attention-generated
 
 #tensorboard --logdir=basic_rnn:/tmp/basic_rnn,loopback:/tmp/lookback_rnn,attention:/tmp/attention_rnn
 
+deactivate
 
 cd /home/$USER
 
