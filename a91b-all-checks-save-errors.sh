@@ -1,3 +1,7 @@
+#!bin/bash
+
+
+
 #run the checks twice
 #open a new terminal and run the following commands again
 
