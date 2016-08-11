@@ -4,6 +4,10 @@
 #for errors to output file and terminal and rewrite old file
 #bash test-setup.sh 2>> errors-only.txt
 
+#command1 2>&1 | tee log.txt
+#command1 > out.txt 2> err.txt
+#bash a04a-tensorflow.sh >> | tee log.txt 2>> | tee log2.txt
+
 
 bash a01-generic-installs.sh
 
