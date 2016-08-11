@@ -1,6 +1,10 @@
 #!bin/bash
 
 
+
+#command 2>> output.txt for errors to output file and terminal and rewrite old file
+
+
 bash a01-generic-installs.sh
 
 
