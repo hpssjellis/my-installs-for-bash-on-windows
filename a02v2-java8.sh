@@ -1,28 +1,39 @@
 #!/bin/bash
 
-#assumes both these commands have been done
-#sudo su
-#apt-get update
+#note most important line to run manually
+#sudo update-alternatives --config java
+#then choose the number of the java you want
 
-mkdir /home/jdk
-cd /home/jdk
+
+mkdir /home/$USER/jdk
+
+
+sudo su <<RUNNING_AS_SUPER_SU
+
+cd /home/$USER/jdk
 
 wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz
 
-tar -zxf jdk-8u5-linux-x64.tar.gz -C /home/jdk
+tar -zxf jdk-8u5-linux-x64.tar.gz -C /home/$USER/jdk
 
-cd /home/jdk/jdk1.8.0_05
 
-ls
+RUNNING_AS_SUPER_SU
+
+
+
+
+#cd /home/$USER/jdk/jdk1.8.0_05
+
+#ls
 
 echo "Jave 8 installed. Now setting paths for this bash session and others to follow."
 
 #exports so that this bash instance runs well
-export JAVA_HOME=/home/jdk/jdk1.8.0_05
+export JAVA_HOME=/home/$USER/jdk/jdk1.8.0_05
 export PATH=$PATH:$JAVA_HOME/bin
 
 #printf so that a new instance (window) using bash will still run.
-printf "\n\nexport JAVA_HOME=/home/jdk/jdk1.8.0_05\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
+printf "\n\nexport JAVA_HOME=/home/$USER/jdk/jdk1.8.0_05\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
 
 
 
@@ -30,12 +41,20 @@ printf "\n\nexport JAVA_HOME=/home/jdk/jdk1.8.0_05\nexport PATH=\$PATH:\$JAVA_HO
 
 #The last number 1100 is the priority mine had java 7 at 1097 online help site had these were set at 100
 
-update-alternatives --install /usr/bin/java java /home/jdk/jdk1.8.0_05/bin/java 1100
+sudo update-alternatives --install /usr/bin/java java /home/$USER/jdk/jdk1.8.0_05/bin/java 1100
 
-update-alternatives --install /usr/bin/javac javac /home/jdk/jdk1.8.0_05/bin/javac 1100
+sudo update-alternatives --install /usr/bin/javac javac /home/$USER/jdk/jdk1.8.0_05/bin/javac 1100
 
-update-alternatives --display java
+sudo update-alternatives --display java
 
-update-alternatives --display javac
+sudo update-alternatives --display javac
 
 java -version
+
+
+
+echo "To switch java versions use the following and choose the priority number"
+echo "sudo update-alternatives --config java"
+
+
+cd /home/$USER

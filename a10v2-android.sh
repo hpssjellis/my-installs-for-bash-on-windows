@@ -2,22 +2,20 @@
 
 
 #apt-get update
-
-
-#NEEDS JAVA 7 RUN THE SWITCH PROGRAM FIRST AND STAY IN THAT WINDOW!
-
-bash a08-switch-java-1.7.sh
-
 mkdir /home/$USER/android
 
-cd /home/$USER/android
 
+# has a 5 minute constrain as sudo su but with your home directory
+echo "Running as sudo su but in the home folder of $USER"
+sudo su <<DONE_AS_SUPER_SU
 
-wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/$USER/android/android-sdk_r24.4.1-linux.tgz
-#wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz 
+  cd /home/$USER/android
+  
+  wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/$USER/android/android-sdk_r24.4.1-linux.tgz
 
-tar -xvzf /home/$USER/android/android-sdk_r24.4.1-linux.tgz -C /home/$USER/android
-#sudo rm android-sdk_r24.4.1-linux.tgz
+  tar -xvzf /home/$USER/android/android-sdk_r24.4.1-linux.tgz -C /home/$USER/android
+
+DONE_AS_SUPER_SU
 
 
 

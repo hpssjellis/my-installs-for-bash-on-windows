@@ -1,5 +1,16 @@
 bash
 
+
+Good java installation explanation at
+https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
+
+or
+
+http://askubuntu.com/questions/48468/how-do-i-install-java
+
+
+
+
 #I have heard it works better from the power shell?
 
 username root

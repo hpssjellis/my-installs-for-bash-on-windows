@@ -25,10 +25,13 @@ echo "research lxrun to find out how to reset your bash-on-windows"
 
 #make sure these lines are the ones that work for your files
 
-printf "\n\nexport JAVA_HOME=/home/jdk/jdk1.8.0_05\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
-printf "\n\nexport BAZEL_HOME=/home/bazel\nexport PATH=\$PATH:\$BAZEL_HOME/bin" >> ~/.bashrc 
-printf "\n\nexport ANDROID_SDK_HOME=/home/android/android-sdk-linux\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/tools\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/platform-tools"  >> ~/.bashrc
-printf "\nexport GRADLE_USER_HOME=/home/gradle/gradle-$gradle_version\nexport PATH=\$PATH:\$GRADLE_USER_HOME/bin"  >> ~/.bashrc
+printf "\n\nexport JAVA_HOME=/home/$USER/jdk/jdk1.8.0_05\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
+printf "\n\nexport BAZEL_HOME=/home/$USER/bazel\nexport PATH=\$PATH:\$BAZEL_HOME/bin" >> ~/.bashrc 
+printf "\n\nexport ANDROID_SDK_HOME=/home/$USER/android/android-sdk-linux\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/tools\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/platform-tools"  >> ~/.bashrc
+
+gradle_version=3.0-rc-2
+
+printf "\nexport GRADLE_USER_HOME=/home/$USER/gradle/gradle-$gradle_version\nexport PATH=\$PATH:\$GRADLE_USER_HOME/bin"  >> ~/.bashrc
 
 
 echo "Must start a new terminal for these to be in effect"
@@ -44,10 +47,10 @@ echo "now symlinks for this user $USER"
 
 
 
-ln -s /home/tensorflow-from-repo/tensorflow/tensorflow/examples /home/$USER/b01-link-to-tf-examples
+ln -s /home/$USER/tensorflow-from-repo/tensorflow/tensorflow/examples /home/$USER/b01-link-to-tf-examples
 
 
 
-
+cd /home/$USER
 
 

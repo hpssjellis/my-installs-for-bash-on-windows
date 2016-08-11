@@ -1,18 +1,19 @@
 #!/bin/bash
 
-#assumes both these commands have been done
-#sudo su
-#apt-get update
-
-
-
-
-apt-get -y install r-base r-base-core r-base-html 
-apt-get -y install libmagickwand-dev
+sudo apt-get -y install r-base r-base-core r-base-html 
+sudo apt-get -y install libmagickwand-dev
 
 
 # for skflow
-apt-get install libblas-dev liblapack-dev
+sudo apt-get install -y libblas-dev liblapack-dev
+
+
+
+# must be in virtual environment
+#source /home/$USER/virtual-tf/bin/activate
+
+#echo "checking if in virtual environment. Can run this multiple times"
+source /home/$USER/virtual-tf/bin/activate
 
 
 pip install dask[dataframe]
@@ -36,7 +37,7 @@ echo "skflow pip stuff installed"
 echo "now grab the github site of examples"
 
 
-cd /home
+cd /home/$USER
 
 git clone https://github.com/hpssjellis/forth-tensorflow.git
 
@@ -47,4 +48,4 @@ ls -l
 
 echo "all done"
 
-
+cd /home/$USER

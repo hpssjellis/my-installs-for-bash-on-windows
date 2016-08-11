@@ -1,40 +1,68 @@
 #!/bin/bash
 
-#assumes both these commands have been done
-#sudo su
+
 #apt-get update
 
-sudo apt-get -y install node npm ant
+
+# has a 5 minute constrain as sudo su but with your home directory
+echo "Running as sudo su but in the home folder of $USER"
+sudo su <<UNTIL_STOP_AS_SUPER_SU
+  cd /home/$USER
+  sudo apt-get -y install node 
+UNTIL_STOP_AS_SUPER_SU
 
 
-#npm install -g phonegap@latest
-npm install -g cordova
+# has a 5 minute constrain as sudo su but with your home directory
+echo "Running as sudo su but in the home folder of $USER"
+sudo su <<UNTIL_STOP_AS_SUPER_SU
+  cd /home/$USER
+  sudo apt-get -y install npm
+UNTIL_STOP_AS_SUPER_SU
+
+
+# has a 5 minute constrain as sudo su but with your home directory
+echo "Running as sudo su but in the home folder of $USER"
+sudo su <<UNTIL_STOP_AS_SUPER_SU
+  cd /home/$USER
+  sudo apt-get -y install ant
+UNTIL_STOP_AS_SUPER_SU
+
+
+# has a 5 minute constrain as sudo su but with your home directory
+echo "Running as sudo su but in the home folder of $USER"
+sudo su <<UNTIL_STOP_AS_SUPER_SU
+  cd /home/$USER
+  npm install cordova 
+UNTIL_STOP_AS_SUPER_SU
+
+
+
+
+echo "A link is needed for cordova to work"
+
+mkdir /home/$USER/cordova
+
+cd /home/$USER/cordova
+
+sudo ln -s `which nodejs` /usr/bin/node
+
 
 echo "Check versions"
 
 cordova -v
 node -v
 npm -v
-ant -V
+ant -v
 #note the weird capital V for ant?
 
 
-Echo "Node is sometimes hard to find to make paths to"
-whereis node
-which node
-
-whereis cordova
-which cordova
 
 echo "Now lets test phonegap cordova"
 
-mkdir /home/cordova
 
-cd /home/cordova
 
-#get out of sudo
-#exit
 
+cd /home/$USER/cordova
 
 #note: phonegap and cordova are kind of the same thing. cordova is opensource, phonegap is Adobes
 #phonegap create myapp --id "com.myapp.sample" --name "myapp"
@@ -43,3 +71,7 @@ cordova create myapp --id "com.myapp.sample" --name "myapp"
 
 
 echo "Did it all work?"
+
+cd /home/$USER
+
+
