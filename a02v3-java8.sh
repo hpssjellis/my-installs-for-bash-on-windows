@@ -21,7 +21,7 @@
 
 mkdir /home/$USER/jdk
 
-
+echo "Installing oracle java 8"
 sudo su <<RUNNING_AS_SUPER_SU
 cd /home/$USER/jdk
 
