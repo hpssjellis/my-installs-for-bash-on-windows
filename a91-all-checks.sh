@@ -40,6 +40,8 @@ echo "--------------------------------------------------------------"
 
 
 echo "First checking the cordova version"
+cd /home/$USER/cordova
+
 cordova --version
 
 echo "--------------------------------------------------------------"
@@ -51,7 +53,11 @@ echo "--------------------------------------------------------------"
 
 
 
+cd /home/$USER
+
 echo "First checking the Python version"
+
+
 python --version
 
 echo "--------------------------------------------------------------"
@@ -63,7 +69,7 @@ echo "--------------------------------------------------------------"
 
 
 echo "Now checking if pip is installed"
-
+source /home/$USER/virtual-tf/bin/activate 
 pip list
 
 echo "--------------------------------------------------------------"
@@ -77,7 +83,7 @@ echo ""
 echo "--------------------------------------------------------------"
 echo ". "
 
-
+deactivate
 
 
 echo "Now checking if java is installed"
@@ -95,8 +101,9 @@ echo ""
 readlink -f $(which javac)
 echo "--------------------------------------------------------------"
 echo ". "
-echo "checking how many java's and the man page"
+echo "checking how many java's and the man page both java and javac"
 readlink -f $(whereis java)
+readlink -f $(whereis javaC)
 echo "--------------------------------------------------------------"
 echo ". "
 
@@ -182,7 +189,7 @@ echo "nano ~/.bashrc"
 
 echo "."
 
-echo "to check the root bashrc (BE very careful screw up here and need to reformat ubuntu)
+echo "to check the root bashrc (BE very careful screw up here and need to reformat ubuntu)"
 echo "sudo nano /root/.bashrc"
 
 
