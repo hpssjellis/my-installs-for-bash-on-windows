@@ -44,7 +44,7 @@ cordova --version
 
 echo "--------------------------------------------------------------"
 echo ". "
-echo "Now checking where node is installed"
+echo "Now checking where cordova is installed"
 readlink -f $(which cordova)
 echo ""
 echo "--------------------------------------------------------------"
