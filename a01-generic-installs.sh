@@ -1,10 +1,25 @@
 #!/bin/bash
 
-
+echo "apt-get update"
 sudo apt-get update
 
 #lots of basic developer pakages. Not a big deal if we try to install them again.
 
+echo "Installing generic helpers"
+
+
+sudo su <<RUNNING_AS_SUPER_SU
+cd /home/$USER/jdk
+sudo apt-get install -y git-core gnupg flex bison gperf build-essential \
+  zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
+  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
+  libgl1-mesa-dev libxml2-utils xsltproc unzip
+  
+RUNNING_AS_SUPER_SU 
+
+
+
+echo "Another set of generics"
 # has a 5 minute constrain as sudo su but with your home directory
 echo "Running as sudo su but in the home folder of $USER"
 sudo su <<DONE_AS_SUPER_SU
