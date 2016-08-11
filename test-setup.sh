@@ -5,11 +5,13 @@
 #bash a91-all-checks.sh 2>&1 | tee log.txt
 
 #if you have errors then write 
-#bash a91-all-checks.sh >log4.txt 2>log5.txt
+#bash a91-all-checks.sh 2>log5.txt
 
-#or to just show error in the log 
 
-#bash bash a91-all-checks.sh 2>log5.txt
+#To view    search (/ text to search Enter) in the file; press q to exit.
+#less log5.txt
+
+
 
 
 
