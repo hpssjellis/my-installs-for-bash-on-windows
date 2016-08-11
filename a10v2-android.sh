@@ -4,7 +4,7 @@
 #apt-get update
 mkdir /home/$USER/android
 
-
+echo "installing android"
 # has a 5 minute constrain as sudo su but with your home directory
 echo "Running as sudo su but in the home folder of $USER"
 sudo su <<DONE_AS_SUPER_SU
