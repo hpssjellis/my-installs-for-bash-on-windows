@@ -1,13 +1,22 @@
 #!/bin/bash
 
-sudo apt-get -y install r-base r-base-core r-base-html 
-sudo apt-get -y install libmagickwand-dev
+
+echo "Installing skflow"
+# has a 5 minute constrain as sudo su but with your home directory
+echo "Running as sudo su but in the home folder of $USER"
+sudo su <<TIL_DONE_AS_SUDO_SU
+
+  cd /home/$USER
+
+
+apt-get -y install r-base r-base-core r-base-html 
+apt-get -y install libmagickwand-dev
 
 
 # for skflow
-sudo apt-get install -y libblas-dev liblapack-dev
+apt-get install -y libblas-dev liblapack-dev
 
-
+TIL_DONE_AS_SUDO_SU
 
 # must be in virtual environment
 #source /home/$USER/virtual-tf/bin/activate
