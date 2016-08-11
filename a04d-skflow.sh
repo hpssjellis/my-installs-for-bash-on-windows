@@ -57,4 +57,6 @@ ls -l
 
 echo "all done"
 
+
+deactivate
 cd /home/$USER
