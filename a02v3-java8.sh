@@ -6,17 +6,17 @@
 #sudo update-alternatives --config java
 #then choose the number of the java you want
 
+#done in generic
 
+#sudo su <<RUNNING_AS_SUPER_SU
+#cd /home/$USER/jdk
 
-sudo su <<RUNNING_AS_SUPER_SU
-cd /home/$USER/jdk
-
-sudo apt-get install git-core gnupg flex bison gperf build-essential \
-  zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
-  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
-  libgl1-mesa-dev libxml2-utils xsltproc unzip
+#sudo apt-get install git-core gnupg flex bison gperf build-essential \
+#  zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
+#  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
+#  libgl1-mesa-dev libxml2-utils xsltproc unzip
   
-RUNNING_AS_SUPER_SU  
+#RUNNING_AS_SUPER_SU  
 
 
 mkdir /home/$USER/jdk
