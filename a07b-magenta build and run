@@ -16,3 +16,4 @@ cd /home/$USER/mymagenta/magenta
 echo "Switching to the magenta workspace folder. try running the bash files"
 
 
+bash a01-rnn_basic.sh
