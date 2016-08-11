@@ -5,7 +5,7 @@ mkdir /home/$USER/bazel
 cd /home/$USER/bazel
 
 
-
+echo "Installing bazel"
 # has a 5 minute constrain as sudo su
 sudo su <<RUNNING_AS_SUPER_SU
 echo "as me $USER and $MY_USER but running as sudo su"
