@@ -37,7 +37,8 @@ RUNNING_AS_SUPER_SU
 
 #export PATH=$PATH:~/bin
 export BAZEL_HOME=/home/$USER/bazel
-export PATH="$PATH:$BAZEL_HOME/bin"
+export PATH=$PATH:$BAZEL_HOME/bin
+
 
 # change ownership and rights for bazel folder recursively -R
 #chown -R $USER:$USER /home/$USER/bazel
