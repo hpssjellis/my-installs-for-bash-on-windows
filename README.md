@@ -37,15 +37,13 @@ Note I am presently (Aug 9, 2016 testing at a different branch). The steps are s
 Note: will ask for passwords. Running the first three commands may reduce the amount of questions
 ```
 
-sudo su
 
-exit
 
 sudo apt-get install -y git
 
 cd ~/
 
-git clone https://github.com/hpssjellis/my-installs-for-bash-on-windows.git --branch aug9-2016-no-sudo-su
+git clone https://github.com/hpssjellis/my-installs-for-bash-on-windows.git --branch testing-branch
 
 cd ~/my-installs-for-bash-on-windows
 
