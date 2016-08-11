@@ -6,10 +6,10 @@
 
 #command1 2>&1 | tee log.txt
 #command1 > out.txt 2> err.txt
-#bash a04a-tensorflow.sh >> | tee log.txt 2>> | tee log2.txt
+#bash bash a91-all-checks.sh >> | tee log.txt 2>> | tee log2.txt
 
 #best
-#bash test-setup.sh 2>&1 | tee log.txt
+#bash bash a91-all-checks.sh 2>&1 | tee log.txt
 
 
 bash a01-generic-installs.sh
