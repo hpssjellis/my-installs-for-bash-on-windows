@@ -51,7 +51,7 @@ bash a07-magenta.sh
 #issues with input at oracle statement
 #bash a02v3-java8.sh 
 
-bash a02v2-java8.sh
+#bash a02v2-java8.sh
 
 bash a03v2-bazel0.3.1.sh
 
