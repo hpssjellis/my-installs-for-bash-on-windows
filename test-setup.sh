@@ -25,9 +25,7 @@ bash a06v2-node-ant-cordova.sh
 
 bash a11v3-gradle.sh
 
-bash a02v3-java8.sh
 
-bash a03v2-bazel0.3.1.sh
 
 
 #running in virtual
@@ -50,19 +48,19 @@ bash a07-magenta.sh
 
 #bash a10-android.sh
 
+bash a02v3-java8.sh
+
+bash a03v2-bazel0.3.1.sh
+
+
+
 bash a10v2-android.sh
 
 
-bash a91-all-checks.sh
+#run the checks twice
 
+bash a91-all-checks.sh 2>&1 | tee a091-all-output.txt
 
-echo "Did not run"
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
+bash a91-all-checks.sh 2> a091-errors-only.txt
+
 
