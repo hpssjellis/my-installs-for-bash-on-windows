@@ -3,7 +3,7 @@
 
 #apt-get update
 
-
+echo "installing node"
 # has a 5 minute constrain as sudo su but with your home directory
 echo "Running as sudo su but in the home folder of $USER"
 sudo su <<UNTIL_STOP_AS_SUPER_SU
@@ -12,6 +12,10 @@ sudo su <<UNTIL_STOP_AS_SUPER_SU
 UNTIL_STOP_AS_SUPER_SU
 
 
+
+
+
+echo "installing npm"
 # has a 5 minute constrain as sudo su but with your home directory
 echo "Running as sudo su but in the home folder of $USER"
 sudo su <<UNTIL_STOP_AS_SUPER_SU
@@ -20,6 +24,9 @@ sudo su <<UNTIL_STOP_AS_SUPER_SU
 UNTIL_STOP_AS_SUPER_SU
 
 
+
+
+echo "installing ant"
 # has a 5 minute constrain as sudo su but with your home directory
 echo "Running as sudo su but in the home folder of $USER"
 sudo su <<UNTIL_STOP_AS_SUPER_SU
@@ -28,6 +35,8 @@ sudo su <<UNTIL_STOP_AS_SUPER_SU
 UNTIL_STOP_AS_SUPER_SU
 
 
+
+echo "installing Cordova"
 # has a 5 minute constrain as sudo su but with your home directory
 echo "Running as sudo su but in the home folder of $USER"
 sudo su <<UNTIL_STOP_AS_SUPER_SU
