@@ -9,7 +9,7 @@
 
 
 
-#bash a91-all-checks.sh >> | tee log.txt 2>> | tee log2.txt
+#bash a91-all-checks.sh >> | tee log1.txt 2> | tee log2.txt
 
 #best
 #bash a91-all-checks.sh 2>&1 | tee log.txt
