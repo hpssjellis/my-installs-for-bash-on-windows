@@ -40,5 +40,13 @@ bash a10v2-android.sh
 bash a91-all-checks.sh
 
 
-
+echo "Did not run"
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
 
