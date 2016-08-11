@@ -9,7 +9,7 @@ bash a06v2-node-ant-cordova.sh
 
 bash a11v3-gradle.sh
 
-bash a02v2-java8.sh
+#bash a02v2-java8.sh
 
 bash a03v2-bazel0.3.1.sh
 
@@ -32,7 +32,7 @@ bash a07-magenta.sh
 
 
 
-bash a10-android.sh
+#bash a10-android.sh
 
 
 
