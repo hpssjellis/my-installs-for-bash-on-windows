@@ -83,7 +83,7 @@ echo ". "
 echo "Now checking if java is installed"
 java -version
 echo ""
-javac
+javac -version
 echo "--------------------------------------------------------------"
 echo ". "
 
@@ -141,19 +141,11 @@ echo "--------------------------------------------------------------"
 echo ". "
 
 
-echo "Now checking if cordova is installed"
-
-cordova -v
-echo ""
-echo "echo "Now checking where cordova is installed"
-readlink -f $(which cordova)
-echo "--------------------------------------------------------------"
-echo ". "
 
 
 echo "Now checking if ant is installed note capital V"
 
-ant -V
+ant -v
 echo ""
 echo "echo "Now checking where ant is installed"
 readlink -f $(which ant)
