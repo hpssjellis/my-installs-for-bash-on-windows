@@ -33,9 +33,12 @@ export PATH=$PATH:$ANDROID_SDK_HOME/platform-tools
 
 echo "Android sdk installed now you have more to do."
 echo "This works best using bash from the power shell"
+echo "Each line needs a fresh power shell"
+echo "probably best not to do the echo y |"
 
 
-echo "y" | android update sdk --filter "platform-tools,tools,extra,build-tools-23.0.2,android-20,android-22,android-23" --no-ui --force 
+
+#echo "y" | android update sdk --filter "platform-tools,tools,extra,build-tools-23.0.2,android-20,android-22,android-23" --no-ui --force 
 
 #android update sdk --filter platform-tools --no-ui --force 
 
