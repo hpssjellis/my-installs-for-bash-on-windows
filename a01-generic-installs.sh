@@ -51,6 +51,17 @@ java -version
 echo "Note java 7 paths not entered into .bashrc so that java 8 can be installed"
 
 
+
+echo "Make the tensorflow virtual environment"
+
+
+virtualenv --system-site-packages /home/$USER/virtual-tf
+
+echo "--------------------------------------------------------------"
+echo ". "
+
+
+
 echo "Utilities installed"
 
 
