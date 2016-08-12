@@ -48,12 +48,12 @@ git clone https://github.com/hpssjellis/my-installs-for-bash-on-windows.git --br
 cd ~/my-installs-for-bash-on-windows
 
 bash test-setup.sh 2>&1 | tee z-logs.txt
+```
 
+Open another terminal to see how the installation is going and repeatedly enter the following command
+```
 
-"Open another terminal to see how theinstallation is going and repeatedly enter one of the two followingcommands"
 'less z-logs.txt'
-
-`nano z-logs.txt`
 
 ```
 
