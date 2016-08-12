@@ -81,7 +81,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 
 java -version
-java -version | tee -a z-proof.txt
+java -version | tee -a /home/$USER/z-proof.txt
 
 echo "Note java 7 paths not entered into .bashrc so that java 8 can be installed"
 
@@ -301,7 +301,11 @@ echo "Did it all work?"
 cd /home/$USER
 
 
-cordova -v  | tee -a z-proof.txt
+cordova -v  | tee -a /home/$USER/z-proof.txt
+nodejs -v  | tee -a /home/$USER/z-proof.txt
+node -v  | tee -a /home/$USER/z-proof.txt
+npm -v  | tee -a /home/$USER/z-proof.txt
+ant -v  | tee -a /home/$USER/z-proof.txt
 
 
 
@@ -355,7 +359,7 @@ UNTIL_STOP_RUNNING_AS_SUDO_SU
 
 echo "Now checking if Gradle is installed"
 gradle -v
-gradle -v  | tee -a z-proof.txt
+gradle -v  | tee -a /home/$USER/z-proof.txt
 echo ""
 echo "echo "Now checking where gradle is installed"
 readlink -f $(which gradle)
@@ -608,7 +612,7 @@ pip install --upgrade jupyter
 
 echo "This just installs jupyter. You must run it"
 
-pip list  | tee -a z-proof.txt
+pip list  | tee -a /home/$USER/z-proof.txt
 
 
 deactivate
@@ -951,7 +955,7 @@ DONE_AS_SUPER_SU
 
 #android list sdk
 
-android -h  | tee -a z-proof.txt
+android -h  | tee -a /home/$USER/z-proof.txt
 
 echo "Did android sdk install?"
 
@@ -1063,7 +1067,7 @@ echo "Did bazel install? Should see the bazel help info"
 cd /home/$USER
 
 
-bazel -h  | tee -a z-proof.txt
+bazel -h  | tee -a /home/$USER/z-proof.txt
 
 
 
