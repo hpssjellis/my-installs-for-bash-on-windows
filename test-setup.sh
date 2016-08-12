@@ -227,18 +227,16 @@ cd /home/$USER
 
 #apt-get update
 
-echo "installing node"
-# has a 5 minute constrain as sudo su but with your home directory
-echo "Running as sudo su but in the home folder of $USER"
-sudo su <<UNTIL_STOP_AS_SUPER_SU
-  cd /home/$USER
-  sudo apt-get -y install node 
-  
 
-  #since strangely called nodejs need a link for just node
-  ln -s `which nodejs` /usr/bin/node  
-  
-UNTIL_STOP_AS_SUPER_SU
+#ant npm and node were installed in the generic bash installer
+
+echo "running this command helps node find nodejs"
+echo "sudo ln -s `which nodejs` /usr/sbin/node "
+echo " sudo ln -s `which nodejs` /usr/sbin/node  "
+
+ sudo ln -s `which nodejs` /usr/bin/node  
+ sudo ln -s `which nodejs` /usr/sbin/node  
+
 
 
 
@@ -249,24 +247,7 @@ UNTIL_STOP_AS_SUPER_SU
 
 
 
-echo "installing npm"
-# has a 5 minute constrain as sudo su but with your home directory
-echo "Running as sudo su but in the home folder of $USER"
-sudo su <<UNTIL_STOP_AS_SUPER_SU
-  cd /home/$USER
-  sudo apt-get -y install npm
-UNTIL_STOP_AS_SUPER_SU
 
-
-
-
-echo "installing ant"
-# has a 5 minute constrain as sudo su but with your home directory
-echo "Running as sudo su but in the home folder of $USER"
-sudo su <<UNTIL_STOP_AS_SUPER_SU
-  cd /home/$USER
-  sudo apt-get -y install ant
-UNTIL_STOP_AS_SUPER_SU
 
 
 
