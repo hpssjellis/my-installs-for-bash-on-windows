@@ -49,7 +49,18 @@ cd ~/my-installs-for-bash-on-windows
 
 bash test-setup.sh 2>&1 | tee z-logs.txt
 
+
+"Open another terminal to see how theinstallation is going and repeatedly enter one of the two followingcommands"
+'less z-logs.txt'
+
+`nano z-logs.txt`
+
 ```
+
+
+
+
+
 
 ## a few very useful commands
 1. `source /home/$USER/virtual-tf/bin/activate` is used for tensorflow, skfow, magenta etc for a virtual environment
