@@ -11,9 +11,14 @@ sudo su <<UNTIL_STOP_AS_SUPER_SU
   sudo apt-get -y install node 
   
   #since strangely called nodejs need a link for just node
-  ln -s `which nodejs` /usr/bin/node
+  
   
 UNTIL_STOP_AS_SUPER_SU
+
+
+
+# link so node is same as nodejs
+sudo ln -s `which nodejs` /usr/bin/node
 
 
 
