@@ -234,8 +234,8 @@ echo "running this command helps node find nodejs"
 echo "sudo ln -s 'which nodejs' /usr/sbin/node "
 echo " sudo ln -s 'which nodejs' /usr/sbin/node  "
 
- sudo ln -s 'which nodejs' /usr/bin/node  
- sudo ln -s 'which nodejs' /usr/sbin/node  
+ #sudo ln -s 'which nodejs' /usr/bin/node  
+# sudo ln -s 'which nodejs' /usr/sbin/node  
 
 
 
