@@ -1,5 +1,15 @@
 #!bin/bash
 
+#NOTES: 
+# SOMETIMES SUDU COMMAND WORKS BEST, SOMETIMES MY SUDU SU TRICK WORKS BEST.
+#PRESENTLY AN EARLY PART OF THE CODE IS KILLING PART OF THE INTSTALL AND A FEW THINGS ARE NOT INSTALLING 
+#THAT WERE INSTALLING BEFORE, VERY FRUSTRATING
+
+# This larger file gets rid of the multiple times it asks for a password
+
+
+
+
 
 #for errors to output file and terminal and rewrite old file
 #bash a91-all-checks.sh 2>&1 | tee log.txt
