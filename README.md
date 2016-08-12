@@ -52,7 +52,7 @@ bash setup-headless.sh 2>&1 | tee z-logs.txt
 
 Open another terminal (shift click the bash on windows icon) to see how the installation is going and repeatedly enter the following command. (up arrow, enter).  Also `/ keyword` highlights search word
 
-The use capital g to get to the bottom of the file `G` and `q` to quit
+The use capital G to get to the bottom of the file `G` and `q` to quit
 
 ```
 cd ~/my-installs-for-bash-on-windows
@@ -90,7 +90,11 @@ cd ~/my-installs-for-bash-on-windows
 12. If something is selected then right-click to copy
 13. Quick file view `less filename.txt`    `q` to quit     `/ search-word` to search
 14. Edit with `nano filename.txt'    `ctrl-x` to quit/save `y` then check filename 
-15. Dangerous `rm -rv foldername` when in the correct main folder can use a path as well.
+15. When things don't work `ctrl-c` gets you out of some trouble
+16. `ctrl-z` gets you out of big trouble
+17. Dangerous `rm -rv foldername` when in the correct main folder can use a path as well.
+18. Really Dangerous, to totally delete the entire BashOnWindows. From windows `cmd` or `powershell` run `lxrun /uninstall /full`
+
  
 #Weird Terminal text colors
 
