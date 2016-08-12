@@ -9,8 +9,6 @@
 
 
 
-
-
 #for errors to output file and terminal and rewrite old file
 #bash a91-all-checks.sh 2>&1 | tee log.txt
 
@@ -231,11 +229,11 @@ cd /home/$USER
 #ant npm and node were installed in the generic bash installer
 
 echo "running this command helps node find nodejs"
-echo "sudo ln -s `which nodejs` /usr/sbin/node "
-echo " sudo ln -s `which nodejs` /usr/sbin/node  "
+echo "sudo ln -s 'which nodejs' /usr/sbin/node "
+echo " sudo ln -s 'which nodejs' /usr/sbin/node  "
 
- sudo ln -s `which nodejs` /usr/bin/node  
- sudo ln -s `which nodejs` /usr/sbin/node  
+ sudo ln -s 'which nodejs' /usr/bin/node  
+ sudo ln -s 'which nodejs' /usr/sbin/node  
 
 
 
@@ -449,8 +447,7 @@ pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensor
 echo "--------------------------------------------------------------"
 echo ". "
 
-echo "Unfortunately on cloud 9 Pip hides the TensorFlow folder so lets clone it for our use"
-echo "Kind of wasteful but it isn't on our computer anyway"
+
 
 mkdir /home/$USER/tensorflow-from-repo
 cd /home/$USER/tensorflow-from-repo
