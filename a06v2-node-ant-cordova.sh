@@ -18,7 +18,7 @@ UNTIL_STOP_AS_SUPER_SU
 
 
 # link so node is same as nodejs
-sudo ln -s `which nodejs` /usr/bin/node
+sudo ln -s 'which nodejs' /usr/bin/node
 
 
 
