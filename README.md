@@ -47,7 +47,7 @@ git clone https://github.com/hpssjellis/my-installs-for-bash-on-windows.git --br
 
 cd ~/my-installs-for-bash-on-windows
 
-bash test-setup.sh 2>&1 | tee z-logs.txt
+bash setup-headless.sh 2>&1 | tee z-logs.txt
 ```
 
 Open another terminal (shift click the bash on windows icon) to see how the installation is going and repeatedly enter the following command. (up arrow, enter).  Also `/ keyword` highlights search word
