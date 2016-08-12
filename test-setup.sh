@@ -53,16 +53,17 @@ bash a07-magenta.sh
 
 #bash a02v2-java8.sh
 
-bash a03v2-bazel0.3.1.sh
+
 
 
 
 bash a10v2-android.sh
 
 
-#run the checks twice
-#open a new terminal and run the following commands again
+bash a03v2-bazel0.3.1.sh
 
+
+#run the checks twice so that errors can be trapped in its own fle
 bash a91-all-checks.sh 2>&1 | tee a091-all-output.txt
 
 bash a91-all-checks.sh 2> a091-errors-only.txt
