@@ -51,7 +51,10 @@ bash test-setup.sh
 
 ```
 
-
+## a few very useful commands
+1. `source /home/$USER/virtual-tf/bin/activate` is used for tensorflow, skfow, magenta etc for a virtual environment
+2. `deactivate` to get out of the virtual environment
+3. `sudo update-alternatives --config java` then choose the left hand side number of the java you want. no number to keep.
 
 
 ## Bash On Windows Tips
@@ -70,6 +73,8 @@ bash test-setup.sh
 10. 'bash filename.sh' can also run a bash file without the above double step.
 11. right-click to paste into the bash terminal. Useful to copy from windows and paste into linux
 12. If something is selected then right-click to copy
+13. Quick file view 'less filename.txt'    'q' to quit     '/ search-word' to search
+14. Edit with 'nano filename.txt'    'ctrl-x' to quit/save 'y' then check filename 
  
 Weird Terminal text colors
 1. symlinks are cyan

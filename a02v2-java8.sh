@@ -6,13 +6,12 @@
 
 
 mkdir /home/$USER/jdk
+cd /home/$USER/jdk
+wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz
 
 
 sudo su <<RUNNING_AS_SUPER_SU
-
 cd /home/$USER/jdk
-
-wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz
 
 tar -zxf jdk-8u5-linux-x64.tar.gz -C /home/$USER/jdk
 

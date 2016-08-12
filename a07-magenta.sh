@@ -186,119 +186,12 @@ ln -s /tmp/attention_rnn/generated aa06-link-to-attention-generated
 
 
 
-
-
-
-
-
-
-
-echo "Not sure if all these checks are really needed, but they can't hurt"
-echo "First checking the Python version"
-python --version
-
-echo "--------------------------------------------------------------"
-echo ". "
-
-
-echo "Now checking where python is installed"
-readlink -f $(which python)
-echo ""
-echo "--------------------------------------------------------------"
-
-
-echo "Now checking if pip is installed"
-
-pip list
-
-echo "--------------------------------------------------------------"
-echo ". "
-
-
-
-echo "echo "Now checking where pip is installed"
-readlink -f $(which pip)
-echo ""
-echo "--------------------------------------------------------------"
-echo ". "
-echo "Now checking if java is installed"
-java -h
-echo ""
-javac
-echo "--------------------------------------------------------------"
-echo ". "
-echo "Now checking where the jdk is installed"
-readlink -f $(which java)
-echo ""
-readlink -f $(which javac)
-echo "--------------------------------------------------------------"
-echo ". "
-echo ". "
-echo "Now checking if Bazel is installed"
-bazel -h
-echo ""
-echo "--------------------------------------------------------------"
-echo ". "
-echo "echo "Now checking where bazel is installed"
-readlink -f $(which bazel)
-echo ""
-echo "--------------------------------------------------------------"
-echo ". "
-
-
-echo ""
-echo "Now checking where gcc is installed"
-readlink -f $(which gcc)
-echo ""
-
-echo "--------------------------------------------------------------"
-echo ". "
-
-cd /home/$USER/mymagenta
-
-echo "next list this directory"
-pwd
-echo ""
-ls -lah  
-
-echo "--------------------------------------------------------------"
-echo "Some other useful commands are cd     cd ..      dir    ls     pwd     "
-echo "."
-
-echo " To check paths for new terminals, I suggested to run:"
-echo "nano ~/.bashrc"
-
-
-echo "Next try the hello-world.sh bash files, might be able to run them from the GUI"
-echo "If not just open a new folder and type bash <name of hello-world.sh program>"
-
-
-
-
-cd /home/$USER/mymagenta/magenta
-
-echo "Lest be brave and try to run the hello music AI world bash file"
-echo "a01-helloworld.sh should have been copied into the magenta workspace"
-#chmod +x a01-rnn_basic.sh
-#./a01-rnn_basic.sh
-
-echo "Import your midi files from /tmp/basic_rnn_generated to https://onlinesequencer.net/"
-echo""
-
-echo "running tensorboard, open a new terminal to run the other programs"
-echo "open your browser to http://0.0.0.0:6006 to run"
-echo "If port already in use to open the port then run"
-echo "fuser 6006/tcp -k"
-echo ""
-echo "tensorboard command is"
-echo "tensorboard --logdir=/tmp/basic_rnn"
-echo "If things don't seem correct ctrl-C to quit tensorboard, Note: this must be the last command in this batch file"
-
 #echo "Open another terminal to try the other bash files"
 #tensorboard --logdir=/tmp/basic_rnn
 
 #tensorboard --logdir=basic_rnn:/tmp/basic_rnn,loopback:/tmp/lookback_rnn,attention:/tmp/attention_rnn
 
+deactivate
 
 cd /home/$USER
 

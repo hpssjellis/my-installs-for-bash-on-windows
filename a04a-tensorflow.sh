@@ -10,7 +10,7 @@
 echo "Make the tensorflow virtual environment"
 
 
-virtualenv --system-site-packages /home/$USER/virtual-tf
+#virtualenv --system-site-packages /home/$USER/virtual-tf
 
 echo "--------------------------------------------------------------"
 echo ". "
@@ -73,5 +73,7 @@ echo "------------------------Tensorflow installed------------------------------
 echo "--------------------------------------------------------------"
 echo "--------------------------------------------------------------"
 
+
+deactivate
 cd /home/$USER
 

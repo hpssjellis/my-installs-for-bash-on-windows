@@ -15,5 +15,5 @@ pip install --upgrade jupyter
 
 echo "This just installs jupyter. You must run it"
 
-
+deactivate
 cd /home/$USER
