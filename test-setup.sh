@@ -21,6 +21,9 @@ bash a01-generic-installs.sh
 
 
 
+# not really the java I want but it seems to work. Oracles is giving me problems
+bash a02v2-java8.sh
+
 bash a06v2-node-ant-cordova.sh
 
 bash a11v3-gradle.sh
