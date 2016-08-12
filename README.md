@@ -50,7 +50,10 @@ cd ~/my-installs-for-bash-on-windows
 bash test-setup.sh 2>&1 | tee z-logs.txt
 ```
 
-Open another terminal (shift click the bash on windows icon) to see how the installation is going and repeatedly enter the following command. (up arrow, enter). Note `q` to exit the less program. Also `/ keyword` highlights search word
+Open another terminal (shift click the bash on windows icon) to see how the installation is going and repeatedly enter the following command. (up arrow, enter).  Also `/ keyword` highlights search word
+
+The use capital g to get to the bottom of the file `G` and `q` to quit
+
 ```
 cd ~/my-installs-for-bash-on-windows
 
