@@ -34,15 +34,6 @@ sudo apt-get install -y git-core gnupg flex bison gperf build-essential zip curl
 
 
 
-# has a 5 minute constrain as sudo su but with your home directory
-echo "Running as sudo su but in the home folder of $USER"
-sudo su <<DONE_AS_SUPER_SU
-
-  cd /home/$USER
-
-  apt-get install -y lib32z1  openjdk-7-jdk
-
-DONE_AS_SUPER_SU
 
 
 export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
