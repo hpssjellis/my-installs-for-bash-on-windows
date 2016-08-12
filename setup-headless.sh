@@ -81,6 +81,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 
 java -version
+java -version | tee -a z-proof.txt
 
 echo "Note java 7 paths not entered into .bashrc so that java 8 can be installed"
 
@@ -181,6 +182,7 @@ sudo update-alternatives --display java
 sudo update-alternatives --display javac
 
 java -version
+java -version | tee -a z-proof.txt
 
 
 
@@ -254,7 +256,7 @@ echo " sudo ln -s 'which nodejs' /usr/sbin/node  "
 echo "installing Cordova"
 cd /home/$USER
 mkdir /home/$USER/cordova
-cd /home/$USER.cordova
+cd /home/$USER/cordova
 
 
 sudo npm install -g cordova 
@@ -299,7 +301,7 @@ echo "Did it all work?"
 cd /home/$USER
 
 
-
+cordova -v  | tee -a z-proof.txt
 
 
 
@@ -353,6 +355,7 @@ UNTIL_STOP_RUNNING_AS_SUDO_SU
 
 echo "Now checking if Gradle is installed"
 gradle -v
+gradle -v  | tee -a z-proof.txt
 echo ""
 echo "echo "Now checking where gradle is installed"
 readlink -f $(which gradle)
@@ -472,6 +475,8 @@ ln -s /home/$USER/virtual-tf/lib/python2.7/site-packages/tensorflow /home/$USER/
 echo "------------------------Tensorflow installed--------------------------------------"
 echo "--------------------------------------------------------------"
 echo "--------------------------------------------------------------"
+
+
 
 
 deactivate
@@ -602,6 +607,9 @@ pip install --upgrade jupyter
 
 
 echo "This just installs jupyter. You must run it"
+
+pip list  | tee -a z-proof.txt
+
 
 deactivate
 cd /home/$USER
@@ -941,7 +949,9 @@ echo "update is very hard to install, might try powerShell then bash "
 DONE_AS_SUPER_SU
 
 
-android list sdk
+#android list sdk
+
+android -h  | tee -a z-proof.txt
 
 echo "Did android sdk install?"
 
@@ -1053,7 +1063,7 @@ echo "Did bazel install? Should see the bazel help info"
 cd /home/$USER
 
 
-
+bazel -h  | tee -a z-proof.txt
 
 
 
