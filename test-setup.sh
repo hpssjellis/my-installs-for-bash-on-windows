@@ -44,7 +44,7 @@ echo "Another set of generics"
 
  
   cd /home/$USER
-  apt-get -y install git pkg-config g++ zlib1g-dev unzip zip python-pip python-dev python-virtualenv libblas-dev liblapack-dev libatlas-base-dev gfortran
+  apt-get -y install lib32z1 git pkg-config g++ zlib1g-dev unzip zip python-pip python-dev python-virtualenv libblas-dev liblapack-dev libatlas-base-dev gfortran
 
 
   echo "Make the tensorflow virtual environment"
@@ -57,15 +57,12 @@ echo "Another set of generics"
 
 
 
-# has a 5 minute constrain as sudo su but with your home directory
-echo "Running as sudo su but in the home folder of $USER"
-sudo su <<DONE_AS_SUPER_SU
 
   cd /home/$USER
 
-  apt-get install -y lib32z1  openjdk-7-jdk
+ sudo  apt-get install -y openjdk-7-jdk
 
-DONE_AS_SUPER_SU
+
 
 
 export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
