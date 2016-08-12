@@ -26,6 +26,10 @@ bash a06v2-node-ant-cordova.sh
 bash a11v3-gradle.sh
 
 
+#open a new terminal and try the checks again to see if the paths have been set coorectly 
+# in the ~/.bashrc file
+
+
 
 
 #running in virtual
