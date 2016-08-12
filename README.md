@@ -51,7 +51,9 @@ bash test-setup.sh
 
 ```
 
-
+## a few very useful commands
+1. 'source /home/$USER/virtual-tf/bin/activate' is used for tensorflow, skfow, magenta etc for a virtual environemnt
+2. 'sudo update-alternatives --config java' then choose the left hand side number of the java you want. no number to keep.
 
 
 ## Bash On Windows Tips
