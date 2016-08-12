@@ -47,7 +47,7 @@ git clone https://github.com/hpssjellis/my-installs-for-bash-on-windows.git --br
 
 cd ~/my-installs-for-bash-on-windows
 
-bash test-setup.sh
+bash test-setup.sh 2>&1 | tee z-logs.txt
 
 ```
 
