@@ -1047,7 +1047,6 @@ bazel -h
 
 echo "Might be needed if you open a new terminal to reset the path to bazel"
 
-echo ""
 echo "Did bazel install? Should see the bazel help info"
 
 
@@ -1076,3 +1075,5 @@ cd /home/$USER
 #bash a91-all-checks.sh 2> a091-errors-only.txt
 
 bash  a91b-all-checks-save-errors.sh
+
+
