@@ -177,7 +177,7 @@ echo "next list this directory cd /home/$USER"
 cd /home/$USER
 
 pwd
-echo ""
+echo " "
 ls -la  
 
 
@@ -185,9 +185,9 @@ ls -la
 echo " To check paths for new terminals, I suggested to run:"
 echo "nano ~/.bashrc"
 
-echo "."
+echo ". "
 
-echo "to check the root bashrc (BE very careful screw up here and need to reformat ubuntu)"
+echo "to check the root bashrc Be very careful, screw up here and need to reformat ubuntu"
 echo "sudo nano /root/.bashrc"
 
 
