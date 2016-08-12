@@ -1067,8 +1067,8 @@ cd /home/$USER
 
 
 #run the checks twice so that errors can be trapped in its own fle
-bash a91-all-checks.sh 2>&1 | tee a091-all-output.txt
+#bash a91-all-checks.sh 2>&1 | tee a091-all-output.txt
 
-bash a91-all-checks.sh 2> a091-errors-only.txt
+#bash a91-all-checks.sh 2> a091-errors-only.txt
 
-
+bash  a91b-all-checks-save-errors.sh
