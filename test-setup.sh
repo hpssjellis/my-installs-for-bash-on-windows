@@ -34,33 +34,32 @@ cd /home/$USER/jdk
 sudo apt-get install -y git-core gnupg flex bison gperf build-essential \
   zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
   lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
-  libgl1-mesa-dev libxml2-utils xsltproc unzip
+  libgl1-mesa-dev libxml2-utils xsltproc unzip lib32z1 git pkg-config \
+  g++ zlib1g-dev unzip zip python-pip python-dev python-virtualenv  \
+  libblas-dev liblapack-dev libatlas-base-dev gfortran
   
 RUNNING_AS_SUPER_SU 
 
 
 
-echo "Another set of generics"
 
- 
-  cd /home/$USER
-  apt-get -y install lib32z1 git pkg-config g++ zlib1g-dev unzip zip python-pip python-dev python-virtualenv libblas-dev liblapack-dev libatlas-base-dev gfortran
+cd /home/$USER
 
 
-  echo "Make the tensorflow virtual environment"
+echo "Make the tensorflow virtual environment"
 
 
-  virtualenv --system-site-packages /home/$USER/virtual-tf
+virtualenv --system-site-packages /home/$USER/virtual-tf
 
-  echo "--------------------------------------------------------------"
-  echo ". "
+echo "-------------Virtual environment made not yet activated-------------------------------------------------"
+echo ". "
 
 
 
 
-  cd /home/$USER
+cd /home/$USER
 
- sudo  apt-get install -y openjdk-7-jdk
+sudo  apt-get install -y openjdk-7-jdk
 
 
 
@@ -225,15 +224,16 @@ sudo su <<UNTIL_STOP_AS_SUPER_SU
   cd /home/$USER
   sudo apt-get -y install node 
   
+
   #since strangely called nodejs need a link for just node
-  
+  ln -s `which nodejs` /usr/bin/node  
   
 UNTIL_STOP_AS_SUPER_SU
 
 
 
 # link so node is same as nodejs
-sudo ln -s `which nodejs` /usr/bin/node
+
 
 
 
