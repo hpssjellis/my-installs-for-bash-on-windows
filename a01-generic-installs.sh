@@ -27,6 +27,15 @@ sudo su <<DONE_AS_SUPER_SU
   cd /home/$USER
   apt-get -y install git pkg-config g++ zlib1g-dev unzip zip python-pip python-dev python-virtualenv libblas-dev liblapack-dev libatlas-base-dev gfortran
 
+
+  echo "Make the tensorflow virtual environment"
+
+
+  virtualenv --system-site-packages /home/$USER/virtual-tf
+
+  echo "--------------------------------------------------------------"
+  echo ". "
+
 DONE_AS_SUPER_SU
 
 # has a 5 minute constrain as sudo su but with your home directory
