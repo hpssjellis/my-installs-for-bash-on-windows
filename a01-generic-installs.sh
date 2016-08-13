@@ -35,32 +35,32 @@ sudo apt-get install -y git-core gnupg flex bison gperf build-essential zip curl
 
 
 # has a 5 minute constrain as sudo su but with your home directory
-echo "Running as sudo su but in the home folder of $USER"
-sudo su <<DONE_AS_SUPER_SU
+#echo "Running as sudo su but in the home folder of $USER"
+#sudo su <<DONE_AS_SUPER_SU
 
-  cd /home/$USER
+#  cd /home/$USER
 
-  apt-get install -y lib32z1  openjdk-7-jdk
+#  apt-get install -y lib32z1  openjdk-7-jdk
 
-DONE_AS_SUPER_SU
+#DONE_AS_SUPER_SU
 
 
-export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
-export PATH=$PATH:$JAVA_HOME/bin
+#export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
+#export PATH=$PATH:$JAVA_HOME/bin
 
 #printf "\n\nexport JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
 
 
-java -version
+#java -version
 
-echo "Note java 7 paths not entered into .bashrc so that java 8 can be installed"
-
-
-
-echo "Make the tensorflow virtual environment"
+#echo "Note java 7 paths not entered into .bashrc so that java 8 can be installed"
 
 
-virtualenv --system-site-packages /home/$USER/virtual-tf
+
+#echo "Make the tensorflow virtual environment"
+
+
+#virtualenv --system-site-packages /home/$USER/virtual-tf
 
 echo "--------------------------------------------------------------"
 echo ". "
