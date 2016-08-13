@@ -100,10 +100,10 @@ cd ~/my-installs-for-bash-on-windows
 11. right-click to paste into the bash terminal. Useful to copy from windows and paste into linux
 12. If something is selected then right-click to copy
 13. Quick file view `less filename.txt`    `q` to quit     `/ search-word` to search
-14. Edit with `nano filename.txt'    `ctrl-x` to quit/save `y` then check filename 
+14. Edit with `nano filename.txt'    `ctrl-x` to quit/save` then  `y` then check the filename and hit enter
 15. When things don't work `ctrl-c` gets you out of some trouble
-16. `ctrl-z` gets you out of big trouble
-17. Dangerous `rm -rv foldername` when in the correct main folder can use a path as well.
+16. `ctrl-z` gets you out of really big trouble
+17. Dangerous `rm -rv foldername` to delete an entire filled folder when in the correct main folder. Can use a path as well.
 18. Really Dangerous, to totally delete the entire BashOnWindows. From windows `cmd` or `powershell` run `lxrun /uninstall /full`
 
  
