@@ -22,7 +22,7 @@ bash a01-generic-installs.sh
 
 
 # not really the java I want but it seems to work. Oracles is giving me problems
-bash a02v2-java8.sh
+#bash a02v2-java8.sh
 
 bash a06v2-node-ant-cordova.sh
 
@@ -64,10 +64,16 @@ bash a07-magenta.sh
 
 
 
+bash a02v3-java8oracle.sh
+
+bash a03v2-bazel0.3.1.sh
+
+
+
+
 bash a10v2-android.sh
 
 
-bash a03v2-bazel0.3.1.sh
 
 
 #run the checks twice so that errors can be trapped in its own fle
