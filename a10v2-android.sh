@@ -62,7 +62,7 @@ android update sdk --filter android-20 --no-ui --force   #Android 4.4W.2 KitKat
 DONE_AS_SUPER_SU
 
 
-android list sdk
+android list sdk --all --extended
 
 echo "Did android sdk install?"
 
