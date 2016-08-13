@@ -19,36 +19,26 @@
 #RUNNING_AS_SUPER_SU  
 
 
-mkdir /home/$USER/jdk
+
 
 echo "Installing oracle java 8 with silent license acceptance"
-sudo su <<RUNNING_AS_SUPER_SU
-cd /home/$USER/jdk
 
 
 
-apt-get install -y python-software-properties debconf-utils
-add-apt-repository -y ppa:webupd8team/java
-apt-get update
+
+sudo apt-get install -y python-software-properties debconf-utils
+sudo add-apt-repository -y ppa:webupd8team/java
+sudo apt-get update
 echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
-apt-get install -y oracle-java8-installer
-apt-get install -y oracle-java8-set-default
-
-
-RUNNING_AS_SUPER_SU
+sudo apt-get install -y oracle-java8-installer
 
 
 
+echo "Oracle Jave 8 installed. Now setting paths for this bash session and others to follow."
 
-#cd /home/$USER/jdk/jdk1.8.0_05
-
-#ls
-
-#echo "Jave 8 installed. Now setting paths for this bash session and others to follow."
-
-#exports so that this bash instance runs well
-#export JAVA_HOME=/home/$USER/jdk/jdk1.8.0_05
-#export PATH=$PATH:$JAVA_HOME/bin
+exports so that this bash instance runs well
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+export PATH=$PATH:$JAVA_HOME/bin
 
 #printf so that a new instance (window) using bash will still run.
 #printf "\n\nexport JAVA_HOME=/home/$USER/jdk/jdk1.8.0_05\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
@@ -59,13 +49,13 @@ RUNNING_AS_SUPER_SU
 
 #The last number 1100 is the priority mine had java 7 at 1097 online help site had these were set at 100
 
-#sudo update-alternatives --install /usr/bin/java java /home/$USER/jdk/jdk1.8.0_05/bin/java 1100
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-8-oracle/jre/bin/java 1800
 
-#sudo update-alternatives --install /usr/bin/javac javac /home/$USER/jdk/jdk1.8.0_05/bin/javac 1100
+sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java-8-oracle/bin/javac 1800
 
-#sudo update-alternatives --display java
+sudo update-alternatives --display java
 
-#sudo update-alternatives --display javac
+sudo update-alternatives --display javac
 
 java -version
 
