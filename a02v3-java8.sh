@@ -30,18 +30,10 @@ sudo apt-get install -y python-software-properties debconf-utils
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get update
 echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
-sudo apt-get install -y oracle-java8-installer
+#sudo apt-get install -y oracle-java8-installer
 
 
 
-echo "Oracle Jave 8 installed. Now setting paths for this bash session and others to follow."
-
-#exports so that this bash instance runs well
-export JAVA_HOME=/usr/lib/jvm/java-8-oracle
-export PATH=$PATH:$JAVA_HOME/bin
-
-#printf so that a new instance (window) using bash will still run.
-#printf "\n\nexport JAVA_HOME=/home/$USER/jdk/jdk1.8.0_05\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
 
 
 
@@ -59,6 +51,18 @@ sudo update-alternatives --display javac
 
 java -version
 
+
+echo "Oracle Jave 8 installed. Now setting paths for this bash session and others to follow."
+
+#exports so that this bash instance runs well
+#export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+#export PATH=$PATH:$JAVA_HOME/bin
+
+
+#printf so that a new instance (window) using bash will still run.
+
+
+printf "\n\nexport JAVA_HOME=/usr/lib/jvm/java-8-oracle\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
 
 
 echo "To switch java versions use the following and choose the priority number"
