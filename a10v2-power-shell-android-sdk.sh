@@ -2,6 +2,11 @@
 
 # may need a new power shell for each line
 
+
+# check if android - works
+# easiest update is probably
+# android update sdk --no-ui
+
 android update sdk --filter platform-tools --no-ui --force 
 
 android update sdk --filter tools --no-ui --force
