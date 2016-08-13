@@ -6,6 +6,8 @@
 # check if android - works
 # easiest update is probably
 # android update sdk --no-ui
+#or
+#android update sdk -u --filter platform-tools,android-23,extra-android-support
 
 android update sdk --filter platform-tools --no-ui --force 
 
@@ -21,3 +23,24 @@ android update sdk --filter android-20 --no-ui --force   #Android 4.4W.2 KitKat
 
 
 android list sdk
+
+
+
+#
+#
+#
+#
+#
+
+#(while :
+#do
+#  echo 'y'
+#  sleep 2
+#done) | android update sdk --no-ui
+
+
+
+
+#echo "y" | android update sdk --no--ui
+
+
