@@ -36,7 +36,7 @@ sudo apt-get install -y oracle-java8-installer
 
 echo "Oracle Jave 8 installed. Now setting paths for this bash session and others to follow."
 
-exports so that this bash instance runs well
+#exports so that this bash instance runs well
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export PATH=$PATH:$JAVA_HOME/bin
 
