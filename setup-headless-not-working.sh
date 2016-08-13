@@ -44,7 +44,7 @@ echo "Installing generic helpers"
 
 #sudo apt-get install -y ant npm node git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip lib32z1 git pkg-config   g++ python-pip python-dev python-virtualenv  libblas-dev liblapack-dev libatlas-base-dev gfortran openjdk-7-jdk
 
-sudo apt-get install -y ant npm unzip zip git node openjdk-7-jdk python-pip python-dev python-virtualenv libblas-dev liblapack-dev libatlas-base-dev gfortran
+sudo apt-get install -y ant npm unzip zip git node openjdk-7-jdk python-pip python-dev python-virtualenv libblas-dev liblapack-dev libatlas-base-dev gfortran default-jre default-jdk
 
 
 
@@ -74,14 +74,14 @@ cd /home/$USER
 
 
 
-export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
-export PATH=$PATH:$JAVA_HOME/bin
+#export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
+#export PATH=$PATH:$JAVA_HOME/bin
 
 #printf "\n\nexport JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
 
 
-java -version
-java -version | tee -a /home/$USER/z-proof.txt
+#java -version
+#java -version | tee -a /home/$USER/z-proof.txt
 
 echo "Note java 7 paths not entered into .bashrc so that java 8 can be installed"
 
@@ -89,11 +89,6 @@ echo "Note java 7 paths not entered into .bashrc so that java 8 can be installed
 
 echo "Make the tensorflow virtual environment"
 
-
-virtualenv --system-site-packages /home/$USER/virtual-tf
-
-echo "--------------------------------------------------------------"
-echo ". "
 
 
 
