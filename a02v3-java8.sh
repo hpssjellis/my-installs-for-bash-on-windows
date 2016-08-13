@@ -75,6 +75,9 @@ echo "To switch java versions use the following and choose the priority number"
 echo "sudo update-alternatives --config java"
 
 
+#note this may default switch to this form of java
+#sudo update-java-alternatives -s java-8-oracle
+
 cd /home/$USER
 
 
