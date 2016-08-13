@@ -3,6 +3,17 @@ Since bash on windows linux subsystem is new it is perfect for a fresh install o
 
 
 
+Aug 12, 2016
+
+Not having a lot of success since so many things need both the android jdk and a stable java 8. We may have to wait for the next update to Bash On Windows. 
+
+The issues I am having seems to be connected to the different way sudo and sudo su seem to work. Also
+any installation package that spawns a new window (like oracle java 8 or the android sdk ) causes
+lots of problems
+
+
+
+
 Aug 7, 2016
 
 To install all the working packages you need this repository on your windows computer with the bash command line having access to it.
