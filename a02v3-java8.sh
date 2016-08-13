@@ -21,14 +21,15 @@
 
 mkdir /home/$USER/jdk
 
-echo "Installing oracle java 8"
+echo "Installing oracle java 8 with silent license acceptance"
 sudo su <<RUNNING_AS_SUPER_SU
 cd /home/$USER/jdk
 
-  add-apt-repository ppa:webupd8team/java
-  apt-get update
-  apt-get install oracle-java8-installer
-
+apt-get install -y python-software-properties debconf-utils
+add-apt-repository -y ppa:webupd8team/java
+apt-get update
+echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
+apt-get install -y oracle-java8-installer
 
 RUNNING_AS_SUPER_SU
 
