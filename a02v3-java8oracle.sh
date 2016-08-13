@@ -35,8 +35,13 @@ sudo apt-get install -y oracle-java8-installer
 
 
 
+echo "Oracle Jave 8 installed. Now setting paths for this bash session and others to follow."
 
 
+printf "\n\nsudo update-java-alternatives -s java-8-oracle" >> ~/.bashrc 
+
+
+echo "Lets try setting it java 8 oracle up"
 
 
 #The last number 1100 is the priority mine had java 7 at 1097 online help site had these were set at 100
@@ -52,10 +57,7 @@ sudo update-alternatives --display javac
 java -version
 
 
-echo "Oracle Jave 8 installed. Now setting paths for this bash session and others to follow."
 
-
-printf "\n\nsudo update-java-alternatives -s java-8-oracle" >> ~/.bashrc 
 
 #exports so that this bash instance runs well
 #export JAVA_HOME=/usr/lib/jvm/java-8-oracle
