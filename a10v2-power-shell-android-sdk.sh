@@ -7,7 +7,7 @@
 # easiest update is probably
 # android update sdk --no-ui
 #or
-#android update sdk -u --filter platform-tools,android-23,extra-android-support
+#android update sdk -u --filter platform-tools,tools,android-23,extra-android-support
 
 android update sdk --filter platform-tools --no-ui --force 
 
@@ -43,4 +43,9 @@ android list sdk
 
 #echo "y" | android update sdk --no--ui
 
+#--filter platform-tools,tools
 
+
+
+
+#android list sdk --all --extended
