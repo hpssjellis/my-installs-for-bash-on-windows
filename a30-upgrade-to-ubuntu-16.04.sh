@@ -27,4 +27,18 @@ lsb_release -a
 
 
 
+#someone else got this working
+
+
+
+#sudo su
+#apt-get update
+#apt-get upgrade
+#apt-get dist-upgrade
+#apt-get autoremove
+#sudo do-release-upgrade -f DistUpgradeViewNonInteractive -d
+
+
+
+
 
