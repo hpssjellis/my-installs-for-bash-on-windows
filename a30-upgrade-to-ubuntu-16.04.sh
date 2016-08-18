@@ -49,3 +49,15 @@ lsb_release -a
 
 
 echo "Did it work"
+
+
+
+#Notes
+
+
+#echo 'yourpasswordhere' | sudo -S dpkg --configure -a
+
+
+
+
+
