@@ -57,6 +57,8 @@ echo "Did it work"
 
 #echo 'yourpasswordhere' | sudo -S dpkg --configure -a
 
+#lxrun /setdefaultuser root
+
 
 
 
