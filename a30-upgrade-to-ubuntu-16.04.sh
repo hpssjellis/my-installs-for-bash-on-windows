@@ -22,7 +22,7 @@ lsb_release -a
 
 #echo "Did that work to install ubuntu 16.04??"
 
-lsb_release -a
+#lsb_release -a
 
 
 
