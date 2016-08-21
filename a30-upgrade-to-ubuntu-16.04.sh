@@ -9,37 +9,35 @@ lsb_release -a
 
 
 
-#echo "you will have to ctrl-c out of this first step"
-
-
-#sudo do-release-upgrade -f DistUpgradeViewNonInteractive -d
-
- #sudo dpkg --configure -a
-
-#sudo apt-get update
-#sudo apt-get dist-upgrade 
-#sudo apt-get autoremove
-
-#echo "Did that work to install ubuntu 16.04??"
-
-#lsb_release -a
-
-
-
-
-#someone else got this working
-
-
 sudo su <<RUNNING_AS_SUPER_SU
 
 cd /home/$USER
 
 
-apt-get update
-apt-get upgrade
-apt-get dist-upgrade
-apt-get autoremove
+apt-get -y update
+
+echo "update done"
+
+apt-get -y upgrade
+
+echo "upgrade done"
+
+apt-get -y dist-upgrade
+
+echo "dist-upgrade done"
+
+
+apt-get -y autoremove
+
+echo "auto-remove done"
+
+
+echo "The next commadn you may have to ctrl-c to get out of"
 do-release-upgrade -f DistUpgradeViewNonInteractive -d
+
+echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done"
+
+
 
 
 RUNNING_AS_SUPER_SU
