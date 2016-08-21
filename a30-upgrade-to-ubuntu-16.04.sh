@@ -15,12 +15,6 @@ cd /home/$USER
 
 
 
-echo "The next command you may have to ctrl-c to get out of---------------------------------"
-do-release-upgrade -f DistUpgradeViewNonInteractive -d
-
-echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done---------------------------------"
-
-
 
 
 
@@ -40,6 +34,47 @@ echo "---------------------------------dist-upgrade done------------------------
 apt-get -y autoremove
 
 echo "---------------------------------auto-remove done---------------------------------"
+
+
+echo "The next command you may have to ctrl-c to get out of---------------------------------"
+do-release-upgrade -f DistUpgradeViewNonInteractive -d
+
+echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done---------------------------------"
+
+
+
+
+
+echo "Strangely works best if you do it twice"
+
+
+
+
+
+apt-get -y update
+
+echo "---------------------------------update done2---------------------------------"
+
+apt-get -y upgrade
+
+echo "---------------------------------upgrade done2---------------------------------"
+
+apt-get -y dist-upgrade
+
+echo "---------------------------------dist-upgrade done2---------------------------------"
+
+
+apt-get -y autoremove
+
+echo "---------------------------------auto-remove done2---------------------------------"
+
+
+echo "The next command you may have to ctrl-c to get out of---------------------------------"
+do-release-upgrade -f DistUpgradeViewNonInteractive -d
+
+echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done2---------------------------------"
+
+
 
 
 
