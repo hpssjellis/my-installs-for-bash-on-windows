@@ -53,9 +53,9 @@ sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-8-oracle
 
 sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java-8-oracle/bin/javac 1800
 
-sudo update-alternatives --display java
+#sudo update-alternatives --display java
 
-sudo update-alternatives --display javac
+#sudo update-alternatives --display javac
 
 java -version
 
