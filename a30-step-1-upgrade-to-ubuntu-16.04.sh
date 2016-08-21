@@ -34,9 +34,9 @@ echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done---------------
 
 echo "Enter password for sudo to run"
 echo "echo 'yourpasswordhere' | sudo -S dpkg --configure -a"
-read mypass
+read -s MYPASS
 
-echo $mypass | sudo -S dpkg --configure -a
+echo $MYPASS | sudo -S dpkg --configure -a
 
 
 
