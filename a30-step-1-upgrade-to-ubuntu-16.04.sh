@@ -18,7 +18,9 @@ lsb_release -a
 
 
 
-echo "The next command you may have to ctrl-c to get out of---------------------------------"
+echo "The next command you may have to ctrl-c to get out of the following command ---------------------------------"
+echo "sudo do-release-upgrade -f DistUpgradeViewNonInteractive -d"
+
 sudo do-release-upgrade -f DistUpgradeViewNonInteractive -d
 
 echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done---------------------------------"
@@ -31,15 +33,16 @@ echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done---------------
 
 #RUNNING_AS_SUPER_SU
 
-
-echo "Enter password for sudo to run"
+echo "running a fancy command to fix issues"
 echo "echo 'yourpasswordhere' | sudo -S dpkg --configure -a"
+echo "Enter password for sudo to run"
 read -s MYPASS
 
 echo $MYPASS | sudo -S dpkg --configure -a
 
 
 
+echo "---------------------------------issues fixed ---------------------------------"
 
 
 
