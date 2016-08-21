@@ -1,6 +1,9 @@
 #!bin/bash
 
 echo "You may have to run this bash file twice!!"
+echo "If you ever get a purple screen be very careful"
+echo "click on the screen, then click tab to select YES, then click enter"
+echo "On the purple screen all else crashes the bash file"
 
 echo "---------------------------------try to upgrade to ubuntu 16.04-------------------------"
 
