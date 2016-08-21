@@ -48,7 +48,7 @@ RUNNING_AS_SUPER_SU
 echo "Oracle Jave 8 installed. Now setting paths for this bash session and others to follow."
 
 
-printf "\n\nsudo update-java-alternatives -s java-8-oracle" >> ~/.bashrc 
+#printf "\n\nsudo update-java-alternatives -s java-8-oracle" >> ~/.bashrc 
 
 
 echo "Lets try setting it java 8 oracle up"
