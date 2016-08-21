@@ -1,6 +1,6 @@
 #!bin/bash
 
-
+echo "You may have to run this bash file twice!!"
 
 echo "---------------------------------try to upgrade to ubuntu 16.04-------------------------"
 
