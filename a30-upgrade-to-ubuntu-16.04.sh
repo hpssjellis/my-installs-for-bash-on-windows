@@ -78,6 +78,10 @@ echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done2--------------
 
 
 
+echo "Need to do a sudo dpkg --configure -a"
+
+dpkg --configure -a'
+
 
 RUNNING_AS_SUPER_SU
 
