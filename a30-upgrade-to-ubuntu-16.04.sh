@@ -9,35 +9,17 @@ lsb_release -a
 
 
 
-sudo su <<RUNNING_AS_SUPER_SU
+#sudo su <<RUNNING_AS_SUPER_SU
 
-cd /home/$USER
-
-
+#cd /home/$USER
 
 
 
 
-apt-get -y update
-
-echo "---------------------------------update done---------------------------------"
-
-apt-get -y upgrade
-
-echo "---------------------------------upgrade done---------------------------------"
-
-apt-get -y dist-upgrade
-
-echo "---------------------------------dist-upgrade done---------------------------------"
-
-
-apt-get -y autoremove
-
-echo "---------------------------------auto-remove done---------------------------------"
 
 
 echo "The next command you may have to ctrl-c to get out of---------------------------------"
-do-release-upgrade -f DistUpgradeViewNonInteractive -d
+sudo do-release-upgrade -f DistUpgradeViewNonInteractive -d
 
 echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done---------------------------------"
 
@@ -47,7 +29,40 @@ echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done---------------
 
 
 
-RUNNING_AS_SUPER_SU
+#RUNNING_AS_SUPER_SU
+
+
+echo "Enter password for sudo to run"
+echo "echo 'yourpasswordhere' | sudo -S dpkg --configure -a"
+read mypass
+
+echo $mypass | sudo -S dpkg --configure -a
+
+
+
+
+
+
+sudo apt-get -y update
+
+echo "---------------------------------update done---------------------------------"
+
+sudo apt-get -y upgrade
+
+echo "---------------------------------upgrade done---------------------------------"
+
+sudo apt-get -y dist-upgrade
+
+echo "---------------------------------dist-upgrade done---------------------------------"
+
+
+sudo apt-get -y autoremove
+
+echo "---------------------------------auto-remove done---------------------------------"
+
+
+
+
 
 
 echo "---------------------------------now checking the version with lsb_release -a"
@@ -55,7 +70,7 @@ echo "---------------------------------now checking the version with lsb_release
 lsb_release -a
 
 
-sudo dpkg --configure -a
+#sudo dpkg --configure -a
 
 
 echo "Did it work, try the bash command again."
@@ -63,6 +78,10 @@ echo "Did it work, try the bash command again."
 
 
 #Notes
+
+
+
+
 
 
 #echo 'yourpasswordhere' | sudo -S dpkg --configure -a
