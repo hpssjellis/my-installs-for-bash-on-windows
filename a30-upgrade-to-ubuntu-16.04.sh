@@ -14,6 +14,16 @@ sudo su <<RUNNING_AS_SUPER_SU
 cd /home/$USER
 
 
+
+echo "The next command you may have to ctrl-c to get out of---------------------------------"
+do-release-upgrade -f DistUpgradeViewNonInteractive -d
+
+echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done---------------------------------"
+
+
+
+
+
 apt-get -y update
 
 echo "---------------------------------update done---------------------------------"
@@ -30,12 +40,6 @@ echo "---------------------------------dist-upgrade done------------------------
 apt-get -y autoremove
 
 echo "---------------------------------auto-remove done---------------------------------"
-
-
-echo "The next command you may have to ctrl-c to get out of---------------------------------"
-do-release-upgrade -f DistUpgradeViewNonInteractive -d
-
-echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done---------------------------------"
 
 
 
