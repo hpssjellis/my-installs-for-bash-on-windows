@@ -45,42 +45,6 @@ echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done---------------
 
 
 
-echo "Strangely works best if you do it twice"
-
-
-
-
-
-apt-get -y update
-
-echo "---------------------------------update done2---------------------------------"
-
-apt-get -y upgrade
-
-echo "---------------------------------upgrade done2---------------------------------"
-
-apt-get -y dist-upgrade
-
-echo "---------------------------------dist-upgrade done2---------------------------------"
-
-
-apt-get -y autoremove
-
-echo "---------------------------------auto-remove done2---------------------------------"
-
-
-echo "The next command you may have to ctrl-c to get out of---------------------------------"
-do-release-upgrade -f DistUpgradeViewNonInteractive -d
-
-echo "do-release-upgrade -f DistUpgradeViewNonInteractive -d done2---------------------------------"
-
-
-
-
-
-echo "Need to do a sudo dpkg --configure -a"
-
-dpkg --configure -a'
 
 
 RUNNING_AS_SUPER_SU
@@ -91,7 +55,10 @@ echo "---------------------------------now checking the version with lsb_release
 lsb_release -a
 
 
-echo "Did it work"
+sudo dpkg --configure -a
+
+
+echo "Did it work, try the bash command again."
 
 
 
